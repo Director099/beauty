@@ -1,0 +1,31 @@
+mixin block-form()
+  .block-form
+    +form().js-form
+      .block-form__content
+        h2.title-h3.block-form__title Записаться
+        //-p.form__text Прежде, чем мы приступим к оценке проекта, нам важно его обсудить с вами. Начать диалог можно в форме, ниже.  Или позвонив по номеру #[a(href="#") +7 917 567-67-67]
+        .block-form__group
+          .form__group
+            +field-text({
+              title: 'Ваше имя *',
+              mods: '',
+              val: '',
+              attrs: {
+                name: 'company',
+                'data-required': 1
+              }
+            }).js-field
+          .form__group
+            +field-text({
+              title: 'Телефон *',
+              mods: '',
+              val: '',
+              attrs: {
+                name: 'phone',
+                type: 'tel',
+                'data-required': 1
+              }
+            }).js-field
+        .block-form__row
+          button.btn.btn--main.block-form__btn Отправить
+        p.form__warning.block-form__mt Нажимая кнопку «Отправить» я даю свое #[a(href="#") согласие на обработку персональных данных]

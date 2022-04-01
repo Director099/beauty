@@ -1,0 +1,21 @@
+.block-gallery {
+
+  .block-type__overflow {
+    background-color: #7E7674;
+    background-image: url("../img/decor/gallery-decor.jpg");
+    padding-bottom: 20px;
+  }
+
+  .flickity-viewport {
+    overflow: visible;
+  }
+}
+
+.block-gallery__slider {
+  &:not(:last-child) {
+    margin-bottom: 12px;
+    @media (min-width: $screen-xl) {
+      margin-bottom: 20px;
+    }
+  }
+}

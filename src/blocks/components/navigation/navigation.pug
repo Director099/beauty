@@ -1,0 +1,8 @@
+mixin navigation(menu)
+  nav.navigation&attributes(attributes)
+    ul.navigation__list
+      each item, i in menu
+        li.navigation__item
+          a.navigation__link.link-menu.js-scroll(class= item.current ? 'arrow' : '' href=item.href)= item.title
+          if(item.current)
+            +popover(true)

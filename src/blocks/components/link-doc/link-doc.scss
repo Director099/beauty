@@ -1,0 +1,13 @@
+.link-doc {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  text-decoration-line: underline;
+  color: #D3C7C4;
+  margin: 0;
+
+  &--n-line {
+    text-decoration-line: none;
+  }
+}

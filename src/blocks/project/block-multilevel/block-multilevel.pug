@@ -1,0 +1,102 @@
+mixin block-multilevel({title})
+  .block-multilevel&attributes(attributes)
+    header.block-multilevel__header.block-multilevel__header--center
+      h2.block-multilevel__title.title-display-big= title
+    +tabs({
+      props: [
+        {
+          'id': 'block-type-0',
+          'text': 'Комплексные предложения',
+          'isActive': true,
+        },
+        {
+          'id': 'block-type-1',
+          'text': 'Основные услуги',
+        },
+        {
+          'id': 'block-type-2',
+          'text': 'Дополнительные услуги',
+        },
+      ],
+      mods: 'block-type tabs--links-mob-hide',
+      btnMob: true
+    })
+      +tabs-item('block-type-0', true)
+        +block-type({
+          tpl: `
+            <button class="slider-arrow slider-arrow--prev swiper-button-prev" type="button" aria-label="Следующий слайд"></button>
+            <button class="slider-arrow slider-arrow--next swiper-button-next" type="button" aria-label="Предыдущий слайд"></button>
+          `
+        }).block-personal
+          .js-slider-auto-width.block-type__slider
+            .swiper-wrapper
+              each item, i in services
+                .swiper-slide.block-type__slide-personal
+                  +card({
+                    img: `decor/service-${i + 1}.jpg`,
+                    contentEnd: true,
+                    isBgImg: true,
+                    className: 'card--service'
+                  })
+                    +card-content({
+                      titleName: item.title,
+                      shortTexts: item.shortTexts,
+                      price: item.price,
+                      bottomContent: true
+                    })
+      +tabs-item('block-type-1')
+        +block-type({
+          tpl: `
+            <button class="slider-arrow slider-arrow--prev swiper-button-prev" type="button" aria-label="Следующий слайд"></button>
+            <button class="slider-arrow slider-arrow--next swiper-button-next" type="button" aria-label="Предыдущий слайд"></button>
+          `
+        }).block-personal
+          p.block-personal__warning *Предложение действует при вервом посещении
+          .js-slider-auto-width.block-type__slider
+            .swiper-wrapper
+              each item, i in services
+                .swiper-slide.block-type__slide-personal
+                  +card({
+                      img: `decor/service-${i + 1}.jpg`,
+                      contentEnd: true,
+                      isBgImg: true,
+                      className: 'card--service'
+                  })
+                    +card-content({
+                        titleName: item.title,
+                        shortTexts: item.shortTexts,
+                        price: item.price,
+                        bottomContent: true
+                    })
+      +tabs-item('block-type-2')
+        +block-type({
+          tpl: `
+            <button class="slider-arrow slider-arrow--prev swiper-button-prev" type="button" aria-label="Следующий слайд"></button>
+            <button class="slider-arrow slider-arrow--next swiper-button-next" type="button" aria-label="Предыдущий слайд"></button>
+          `
+        }).block-personal
+          .filter-group
+            ul.tab-filter
+              li.tab-filter__item
+                a(data-btn-filter="depilation").tab-filter__btn.active Депиляция
+              li.tab-filter__item
+                a(data-btn-filter="epilation").tab-filter__btn Эпиляция
+              li.tab-filter__item
+                a(data-btn-filter="lymphatic-procedures").tab-filter__btn Лимфодренажные процедуры
+            .js-slider-auto-width.block-type__slider
+              .swiper-wrapper
+                each item, i in services
+                  - const isCategory = item.category === 'depilation' ? 'd-none' : '';
+                  .swiper-slide.block-type__slide-personal(class=isCategory data-filter=item.category )
+                    +card({
+                      img: `decor/service-${i + 1}.jpg`,
+                      contentEnd: true,
+                      isBgImg: true,
+                      className: 'card--service'
+                    })
+                      +card-content({
+                        titleName: item.title,
+                        shortTexts: item.shortTexts,
+                        price: item.price,
+                        bottomContent: true
+                      })

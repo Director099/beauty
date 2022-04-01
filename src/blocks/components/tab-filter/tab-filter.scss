@@ -1,0 +1,40 @@
+.tab-filter {
+  @include ul-none;
+  display: flex;
+  margin-bottom: 32px;
+
+  flex-wrap: nowrap;
+  overflow: auto;
+}
+
+.tab-filter__item {
+  background: #F2F2F2;
+  padding: 4px 2px;
+
+  &:first-child {
+    border-radius: 16px 0px 0 16px;
+    padding-left: 4px;
+  }
+
+  &:last-child {
+    border-radius: 0px 16px 16px 0px;
+    padding-right: 4px;
+  }
+}
+
+.tab-filter__btn {
+  display: block;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  padding: 14px 24px;
+  border-radius: 14px;
+  color: #916F5F;
+  white-space: nowrap;
+
+  &.active {
+    color: #222222;
+    background: $white;
+  }
+}

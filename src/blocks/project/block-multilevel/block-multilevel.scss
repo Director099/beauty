@@ -1,0 +1,19 @@
+.block-multilevel {
+  margin-bottom: 20px;
+}
+
+.block-multilevel__header {
+  margin-bottom: 16px;
+
+  @media (min-width: $screen-xl) {
+    margin-bottom: 57px;
+  }
+
+  &--center {
+    text-align: center;
+  }
+}
+
+.block-multilevel__title {
+  margin-bottom: 0;
+}

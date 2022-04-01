@@ -1,0 +1,80 @@
+.grid-row {
+  @include row(20px, 20px, 20px, 20px, 20px);
+  gap: 20px 0;
+
+  @media (min-width: $screen-xl) {
+    &--xl-end {
+      align-items: flex-end;
+    }
+
+    &--xl-reverce {
+      flex-direction: row-reverse;
+    }
+
+    &--xl-mb40 .grid-row__col {
+      margin-bottom: 40px;
+    }
+
+    &--xl-mb32 .grid-row__col {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.grid-row__col {
+  @include make-col(12, 12, 20px);
+  //margin-bottom: 16px;
+
+  &--xs-p0 {
+    @media (max-width: $screen-xl - 1) {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+
+  &--xl-auto {
+    @media (min-width: $screen-xl) {
+      flex-basis: auto;
+    }
+  }
+
+  &--xl-3 {
+    @include col(xl, 3, 12, 20px);
+  }
+
+  &--xl-3_3 {
+    @include col(xl, 3.3, 12, 20px);
+  }
+
+  &--xl-3_7 {
+    @include col(xl, 3.7, 12, 20px);
+  }
+
+  &--xl-4 {
+    @include col(xl, 4, 12, 20px);
+  }
+
+  &--xl-6 {
+    @include col(xl, 6, 12, 20px);
+  }
+
+  &--xl-7 {
+    @include col(xl, 7, 12, 20px);
+  }
+
+  &--xl-8_3 {
+    @include col(xl, 8.3, 12, 20px);
+  }
+
+  &--xl-9 {
+    @include col(xl, 9, 12, 20px);
+  }
+
+  &--xl-8_7 {
+    @include col(xl, 8.7, 12, 20px);
+  }
+
+  &--xxl-3 {
+    @include col(xxl, 3, 12, 20px);
+  }
+}

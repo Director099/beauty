@@ -1,0 +1,170 @@
+// В этом файле должны быть стили для БЭМ-блока tabs, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+$gray-lightest: hsl(0, 0%, 90%) !default;
+
+$text-color: hsl(0, 0%, 10%) !default;
+$text-color--muted: hsl(0, 0%, 50%) !default;
+
+$border-color: hsl(0, 0%, 60%) !default;
+
+$line-height: 1.5 !default;
+
+$field-padding-vertical: 0.3em !default;
+$field-padding-horizontal: 0.7em !default;
+
+.tabs__header {
+  position: relative;
+  z-index: 2;
+}
+
+.tabs__links {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+}
+
+.tabs__link-wrap {
+  position: relative;
+  border-bottom: 1px solid transparent;
+  transition: $time;
+
+  &--active {
+    @media (min-width: $screen-xl) {
+      border-bottom: 1px solid #222222;
+    }
+
+    .tabs__link {
+      color: $text-color;
+    }
+  }
+}
+
+.tabs__link {
+  display: block;
+  color: $text-color--muted;
+  text-decoration: none;
+  transition: $time;
+}
+
+.tabs__content-wrapper {
+  display: block;
+
+  @media (min-width: $screen-xl) {
+    border-top: none;
+  }
+}
+
+.tabs__content-item {
+  display: none;
+
+  & > *:last-child {
+    margin-bottom: 0;
+  }
+
+  &--active {
+    display: block;
+  }
+}
+
+.tabs__btn-dropdown {
+  color: #916F5F;
+  padding-top: 9px;
+  padding-bottom: 9px;
+
+  &::after {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 4px;
+    width: 8px;
+    height: 4px;
+    transition: $time;
+    background-repeat: no-repeat;
+    background-image: url("data:image/svg+xml,%3Csvg width='7' height='4' viewBox='0 0 7 4' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6.78775 0.349316C6.67846 0.24067 6.53061 0.179688 6.3765 0.179688C6.22239 0.179688 6.07455 0.24067 5.96525 0.349316L3.87108 2.41432L1.80608 0.349316C1.69679 0.24067 1.54894 0.179688 1.39483 0.179688C1.24073 0.179688 1.09288 0.24067 0.983584 0.349316C0.928909 0.403545 0.885512 0.468062 0.855897 0.539147C0.826282 0.610231 0.811035 0.686476 0.811035 0.763483C0.811035 0.84049 0.826282 0.916735 0.855897 0.98782C0.885512 1.0589 0.928909 1.12342 0.983584 1.17765L3.45692 3.65098C3.51115 3.70566 3.57566 3.74905 3.64675 3.77867C3.71783 3.80828 3.79408 3.82353 3.87108 3.82353C3.94809 3.82353 4.02434 3.80828 4.09542 3.77867C4.16651 3.74905 4.23102 3.70566 4.28525 3.65098L6.78775 1.17765C6.84243 1.12342 6.88582 1.0589 6.91544 0.98782C6.94505 0.916735 6.9603 0.84049 6.9603 0.763483C6.9603 0.686476 6.94505 0.610231 6.91544 0.539147C6.88582 0.468062 6.84243 0.403545 6.78775 0.349316Z' fill='%237E7674'/%3E%3C/svg%3E%0A");
+  }
+
+  &:hover {
+    &::after {
+      transform: rotate(180deg);
+    }
+
+    & + .tabs__links {
+      opacity: 1;
+      visibility: visible;
+      z-index: 2;
+    }
+  }
+}
+
+.tabs--links-mob-hide {
+  @media (max-width: $screen-xl - 1) {
+    .tabs__links {
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: $white;
+      margin-top: 15px;
+      border-radius: 15px;
+      transition: $time;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 11px 16px;
+
+      opacity: 0;
+      visibility: hidden;
+      z-index: -1;
+
+      &.active {
+        opacity: 1;
+        visibility: visible;
+        z-index: 2;
+      }
+    }
+
+  }
+}
+
+.tabs--block-type {
+  .tabs__header {
+    text-align: center;
+    margin-bottom: 20px;
+
+    @media (min-width: $screen-xl) {
+      margin-bottom: 57px;
+    }
+  }
+
+  .tabs__links {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 32px;
+  }
+
+  .tabs__link {
+    font-size: 14px;
+    line-height: 20px;
+    color: #916F5F;
+
+    &:hover {
+      color: #222222;
+    }
+
+    @media (min-width: $screen-xl) {
+      font-size: 17px;
+      line-height: 24px;
+    }
+  }
+
+  .tabs__link-wrap--active .tabs__link {
+    color: #222222;
+  }
+}

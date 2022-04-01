@@ -1,0 +1,45 @@
+.modal-menu {
+  padding: 0;
+  background-image: url("../img/decor/bg-mobile-menu.jpg");
+  background-color: #f2f2f2;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: $white;
+}
+
+.modal-menu {
+  .popover {
+    background: transparent;
+    position: static;
+    border: none;
+    backdrop-filter: none;
+    min-width: auto;
+    z-index: 1;
+    opacity: 1;
+    visibility: visible;
+    border-radius: 0;
+  }
+
+  .popover__list {
+    padding: 35px 12px;
+  }
+
+  .link-menu {
+    color: inherit;
+  }
+
+  .modal__header {
+    @media (max-width: $screen-xl - 1) {
+      display: flex;
+      justify-content: space-between; //?
+      align-items: center;
+      min-height: 48px;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
+
+  .modal__close--arrow {
+    background-image: url("data:image/svg+xml,%3Csvg width='17' height='14' viewBox='0 0 17 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6.70711 0L8.12132 1.41421L3.828 5.707L17 5.70711V7.70711L3.828 7.707L8.12132 12L6.70711 13.4142L0 6.70711L6.70711 0Z' fill='white'/%3E%3C/svg%3E%0A");
+  }
+}

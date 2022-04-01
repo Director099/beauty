@@ -1,0 +1,30 @@
+mixin popover(popoverTopBlock)
+  .popover
+    if (popoverTopBlock)
+      .popover__top-block
+        a.btn.btn--b-tr Заказать звонок
+    ul.popover__list
+      li.popover__item
+        .popover__header
+          span Телефон
+        a.popover__link(href="tel:+78001016897") +7 800 101 68 97
+      li.popover__item
+        .popover__header
+          span Режим работы
+        span.popover__link Продукция пн-пт — 10:00–20:00
+        span.popover__link Продукция сб-вс — Выходной
+      li.popover__item
+        .popover__header
+          span Электронная почта
+        a.popover__link(href="mailto:tehnoelast@bk.ru")
+          img(src="img/sprite/icon-mail-ios.svg" alt="Иконка")
+          span tehnoelast@bk.ru
+      li.popover__item
+        .popover__header
+          span Мессенджеры
+        a.popover__link.popover__link--big(href="mailto:tehnoelast@bk.ru")
+          img(src="img/sprite/icon-tg.svg" alt="Иконка")
+          span Telegram
+        a.popover__link.popover__link--big(href="mailto:tehnoelast@bk.ru")
+          img(src="img/sprite/icon-wp.svg" alt="Иконка")
+          span WhatsApp

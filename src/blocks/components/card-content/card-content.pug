@@ -1,0 +1,19 @@
+mixin card-content({titleService, titleName, shortTexts, price, bottomContent, sizeTitle, titleH1})
+  section.card-content
+    if (titleH1)
+      h1.card-content__title-service.title-h1= titleH1
+    if (titleService)
+      h3.card-content__title-service.text-h1(class=sizeTitle ? 'title-h2' : '')!= titleService
+    if(titleName)
+      h3.card-content__title-name= titleName
+    if (shortTexts)
+      ul.card-content__list-short-text
+        each item, i in shortTexts
+          li.card-content__short-text= item
+    if (bottomContent)
+      .card-content__bottom-content
+        span.card-content__price= price
+          svg(width="10" height="13")
+            use(href="img/symbols.svg#icon-rub")
+        a.btn(href="#modal-callback", data-fancybox="") Записаться
+    block

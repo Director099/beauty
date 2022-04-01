@@ -1,0 +1,20 @@
+.modal-callback {
+  //background-image: url("../img/decor/bg-change-city.jpg");
+  background-color: #F2F2F2;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 20px;
+
+  @media (min-width: $screen-xl) {
+    border-radius: 20px;
+    padding: 36px;
+  }
+}
+
+.modal-callback  {
+  @media (min-width: $screen-xl) {
+    .modal__dialog {
+      width: 300px;
+    }
+  }
+}

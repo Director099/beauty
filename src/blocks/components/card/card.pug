@@ -1,0 +1,9 @@
+mixin card({img, altImg, isBgImg, contentEnd, contentCenter, className})
+  - const bgImg = `background-image: url('img/${img}')`;
+  - const positionEnd= contentEnd ? `card--content-end` : '';
+  - const positionCenter = contentCenter ? `card--content-center` : '';
+  - const cssClass = className ? className : '';
+  .card(style=`${isBgImg ? bgImg : ''}` class=`${positionEnd} ${positionCenter} ${cssClass}`)&attributes(attributes)
+    if (!isBgImg && img)
+      img.card__img(src=`img/${img}`, alt="Изображение")
+    block

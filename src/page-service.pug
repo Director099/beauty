@@ -1,0 +1,170 @@
+extends pug/layout.pug
+
+block meta
+  title Главная
+block header
+  +page-header("img/content/logo.svg")
+block content
+  .main-content
+    main
+      +full-page({})
+      .grid-row.main-content__mb-grid
+        .grid-row__col.grid-row__col--xl-6
+          +card({
+            img: `decor/adv-decor-1.jpg`,
+            className: 'advantage advantage--1',
+            isBgImg: true,
+          })
+            +card-content({
+              titleService: 'Собственный бренд косметики'
+            })
+              picture
+                source(media="(min-width: 1233px)" srcset="img/content/adv-content-1.png")
+                img.advantage__img(src="img/content/adv-content-mob-1.png", alt="Продукция")
+              a.btn(href="#", target="_blank") Интернет-магазин
+        .grid-row__col.grid-row__col--xl-6
+          +card({
+            img: `decor/adv-decor-2.jpg`,
+            className: 'advantage advantage--2',
+            isBgImg: true,
+          })
+            +card-content({
+              titleService: 'Специалисты <br>только с медицинским образованием'
+            })
+              picture
+                source(media="(min-width: 1233px)" srcset="img/content/adv-content-2.png")
+                img.advantage__img(src="img/content/adv-content-mob-2.png", alt="Продукция")
+        .grid-row__col
+          +card({
+            img: `decor/adv-picture-1.jpg`,
+            className: 'advantage advantage--3',
+            isBgImg: true,
+            contentCenter: true,
+          })
+            +card-content({
+              titleService: 'Новости компании',
+              sizeTitle: true
+            })
+              a.btn(href="https://youtu.be/wtnKxsq8LyY", data-fancybox="") Смотреть видео
+                svg(width="20" height="20").btn__icon.btn__icon--m-left
+                  use(href="img/symbols.svg#icon-play")
+        .grid-row__col.grid-row__col--xl-4
+          +card({
+            img: `decor/adv-decor-3.jpg`,
+            className: 'advantage advantage--height advantage--4',
+            isBgImg: true,
+          })
+            +card-content({
+              titleService: 'Предоставляем документы в налоговую на возврат 13% по мед услугам'
+            })
+              picture
+                source(media="(min-width: 1233px)" srcset="img/content/adv-content-3.png")
+                img.advantage__img(src="img/content/adv-content-mob-3.png", alt="Продукция")
+        .grid-row__col.grid-row__col--xl-4
+          +card({
+            img: `decor/adv-decor-4.jpg`,
+            className: 'advantage advantage--height advantage--5',
+            isBgImg: true,
+          })
+            +card-content({
+              titleService: 'Оказываем услуги массажа по ДМС по спец ценам'
+            })
+              picture
+                source(media="(min-width: 1233px)" srcset="img/content/adv-content-4.png")
+                img.advantage__img(src="img/content/adv-content-mob-4.png", alt="Продукция")
+              a.btn(href="#", target="_blank") Получить расчет
+
+        .grid-row__col.grid-row__col--xl-4
+          +card({
+            img: `decor/adv-decor-3.jpg`,
+            className: 'advantage advantage--height advantage--6',
+            isBgImg: true,
+          })
+            +card-content({
+              titleService: 'Работаем более <br> 15 лет',
+              sizeTitle: true
+            })
+              picture
+                source(media="(min-width: 1233px)" srcset="img/content/adv-content-5.png")
+                img.advantage__img(src="img/content/adv-content-5.png", alt="Продукция")
+      +block-multilevel({
+        title: 'Услуги и цены'
+      })(id="service")
+      +block-type({
+        title: 'Специалисты <br>массажа',
+        tpl: `
+          <button class="slider-arrow slider-arrow--prev swiper-button-prev" type="button" aria-label="Следующий слайд"></button>
+          <button class="slider-arrow slider-arrow--next swiper-button-next" type="button" aria-label="Предыдущий слайд"></button>
+        `
+      })(id="personal").block-personal
+        .js-slider-auto-width.block-type__slider
+          .swiper-wrapper
+            - for (let i = 0; i < 5; i++)
+              .swiper-slide.block-type__slide-personal
+                +card({
+                  img: `content/persona-${i + 1}.png`,
+                  contentEnd: true,
+                  className: 'card--personal'
+                })
+                  +card-content({
+                    titleName: 'Имя Фамилия',
+                    shortTexts: ['Должность'],
+                  })
+      +block-type({
+        title: 'Фотогалерея студии',
+        classNameHeader: 'block-type__header--white block-type__header--center',
+        desc: 'Почувствуйте особую атмосферу уюта и доброжелательности'
+      })(id="gallery").block-gallery
+        .js-slider-marquee-top.block-gallery__slider
+          - for (let i = 0; i < 4; i++)
+            .block-type__slide-gallery
+              +card({
+                  img: `content/gallery-normal-${i + 1}.jpg`,
+                  contentEnd: true,
+                  className: 'card--gallery-normal'
+              })(data-src=`img/content/gallery-normal-${i + 1}.jpg`, data-fancybox="gallery")
+        .js-slider-marquee-bottom.block-gallery__slider
+          - for (let i = 0; i < 4; i++)
+            .block-type__slide-gallery
+              +card({
+                  img: `content/gallery-small-${i + 1}.jpg`,
+                  contentEnd: true,
+                  className: 'card--gallery-small'
+              })(data-src=`img/content/gallery-small-${i + 1}.jpg`, data-fancybox="gallery")
+      +block-type({
+        title: 'Что говорят <br>люди о нас',
+        classNameHeader: 'block-type__header--white',
+        tpl: `
+          <button class="slider-arrow slider-arrow--prev swiper-button-prev" type="button" aria-label="Следующий слайд"></button>
+          <button class="slider-arrow slider-arrow--next swiper-button-next" type="button" aria-label="Предыдущий слайд"></button>
+        `
+      })(id="review").block-review
+        .js-slider-auto-width.block-type__slider
+          .swiper-wrapper
+            - for (let i = 0; i < 5; i++)
+              .swiper-slide.block-type__slide-review
+                +card({
+                    img: `content/review.jpg`,
+                    contentEnd: true,
+                    className: 'card--review'
+                })(data-fancybox="review" data-src="https://youtu.be/wtnKxsq8LyY")
+                  a.btn.card__btn-review Смотреть отзыв
+                    svg(width="20" height="20").btn__icon.btn__icon--m-left
+                      use(href="img/symbols.svg#icon-play")
+      +block-type({
+        container: true
+      })(id="social").block-social
+        .grid-row.grid-row--xl-end
+          .grid-row__col.grid-row__col--xl-6
+            section.social-content
+              h3.social-content__title.title-h3 Подпишись <br> на наши обновления в социальных сетях
+              p.social-content__desc Чтобы первыми узнавать об акциях, скидках
+              .social-content__btn
+                each item, i in social
+                  a.btn.btn--dark(href="#", target="_blank")= item.name
+                    img.btn__icon.btn__icon--m-left(src=item.icon, alt=item.name)
+          .grid-row__col.grid-row__col--xl-6
+            .block-social__picture
+              img(src="img/content/block-social-phone.png" alt="Наши Соц сети")
+    +page-footer()
+block footer

@@ -1,0 +1,10 @@
+mixin full-page({title})
+  +card({})(id="about").full-page
+    +card-content({})
+      span.full-page__descriptor «Мечта Бьюти» – с нами быть красивыми легко!
+      h1.full-page__title.title-h1 Международная сеть салонов профессионального массажа
+      p.full-page__desc Запишись на массаж всего тела  60 мин. всего за 1950 руб
+      a.btn.btn--s-big(href="#") Записаться на массаж
+    picture
+      source(media="(min-width: 1233px)" srcset="img/content/main-picture.png")
+      img(src="img/content/main-picture-mob.png", alt="Международная сеть салонов профессионального массажа").full-page__main-picture

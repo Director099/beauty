@@ -1,0 +1,38 @@
+mixin block-type({title, classNameTitle, classNameHeader, desc, container, mainTag, tpl})
+  +tag-block-type(mainTag)&attributes(attributes)
+    !=tpl
+    .block-type__overflow
+      if (container)
+        .container
+          +block-type-header({
+            classNameHeader: classNameHeader,
+            classNameTitle: classNameTitle,
+            desc: desc,
+            title: title,
+          })
+          block
+      else
+        +block-type-header({
+          classNameHeader: classNameHeader,
+          classNameTitle: classNameTitle,
+          desc: desc,
+          title: title,
+        })
+        block
+
+//- Вспомогательные миксины
+
+mixin block-type-header({classNameHeader, classNameTitle, desc, title})
+  if(title)
+    section.block-type__header(class=classNameHeader)
+      h2.block-type__title.title-h2(class=classNameTitle)!= title
+      if (desc)
+        p.block-type__description= desc
+
+mixin tag-block-type(tag)
+  if (tag === 'footer')
+    footer.block-type&attributes(attributes)
+      block
+  else
+    .block-type&attributes(attributes)
+      block

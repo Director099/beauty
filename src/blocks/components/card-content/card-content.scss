@@ -1,0 +1,51 @@
+.card-content {
+  padding: 14px 12px;
+  border-radius: 20px;
+  color: $white;
+}
+
+.card-content__title-service {
+  margin-bottom: 10px;
+}
+
+.card-content__title-name {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  margin: 0;
+}
+
+.card-content__list-short-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  @include ul-none;
+}
+
+.card-content__short-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  margin: 0;
+}
+
+.card-content__bottom-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 14px;
+  padding-top: 12px;
+  border-top: 1px solid rgba($white, 0.3);
+}
+
+.card-content__price {
+  display: flex;
+  align-items: center;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 24px;
+
+  svg {
+    margin-left: 5px;
+  }
+}

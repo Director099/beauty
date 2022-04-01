@@ -1,0 +1,73 @@
+// Style plagin
+@import "variables";
+
+// @import "../../node_modules/bootstrap/scss/bootstrap-grid.scss";
+
+// My style
+
+@import "grid-mixins";
+
+@import "functions";
+
+@import "fonts";
+@import "global";
+
+@import "../blocks/components/btn/btn";
+@import "../blocks/components/modal/modal";
+@import "../blocks/components/tabs/tabs";
+@import "../blocks/components/slider-arrow/slider-arrow";
+@import "../blocks/components/tab-filter/tab-filter";
+@import "../blocks/components/field-text/field-text";
+@import "../blocks/components/title/title";
+@import "../blocks/components/link-menu/link-menu";
+@import "../blocks/components/grid-row/grid-row";
+@import "../blocks/components/main-content/main-content";
+@import "../blocks/components/container/container";
+@import "../blocks/components/card/card";
+@import "../blocks/components/card-content/card-content";
+@import "../blocks/components/block-tape/block-type";
+@import "../blocks/components/social-content/social-content";
+@import "../blocks/components/info/info";
+@import "../blocks/components/link-doc/link-doc";
+@import "../blocks/components/list-doc/list-doc";
+@import "../blocks/components/advantage/advantage";
+@import "../blocks/components/navigation/navigation";
+@import "../blocks/components/popover/popover";
+@import "../blocks/components/copyright/copyright";
+@import "../blocks/components/develop/develop";
+@import "../blocks/components/logo/logo";
+@import "../blocks/components/display/display";
+@import "../blocks/components/burger/burger";
+@import "../blocks/components/block-form/block-form";
+
+@import "../blocks/modal/modal-location/modal-location";
+@import "../blocks/modal/modal-menu/modal-menu";
+@import "../blocks/modal/modal-callback/modal-callback";
+
+@import "../blocks/project/page-header/page-header";
+@import "../blocks/project/page-footer/page-footer";
+@import "../blocks/project/page-main/page-main";
+@import "../blocks/project/order-page/order-page";
+@import "../blocks/project/block-review/block-review";
+@import "../blocks/project/block-personal/block-personal";
+@import "../blocks/project/block-gallery/block-gallery";
+@import "../blocks/project/block-social/block-social";
+@import "../blocks/project/block-multilevel/block-multilevel";
+@import "../blocks/project/full-page/full-page";
+@import "../blocks/project/list-cities/list-cities";
+
+.with-fancybox {
+  @media (max-width: $screen-xl - 1) {
+    overflow: hidden;
+  }
+}
+
+@media (max-width: $screen-xl - 1) {
+  ::-webkit-scrollbar {
+    display: none
+  }
+}
+
+[data-src] {
+  cursor: pointer;
+}

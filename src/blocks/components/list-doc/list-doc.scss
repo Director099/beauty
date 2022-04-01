@@ -1,0 +1,6 @@
+.list-doc {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  @include ul-none;
+}

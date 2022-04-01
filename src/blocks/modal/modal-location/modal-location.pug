@@ -1,0 +1,21 @@
+mixin modal-location()
+  +modal({id: 'modal-location'}).modal-location
+    .modal-location__header
+      +logo('/').modal-location__logo
+        img(src="img/content/logo.svg", alt="Логотип")
+      section.modal-location__header-row
+        h3.modal-location__title Выберите город
+        button.modal-location__close(data-fancybox-close type="button")
+          svg(width="14", height="14")
+            use(href="img/symbols.svg#icon-close")
+    .list-cities.modal-location__content
+      ul.list-cities__inner
+        each item, i in listСities
+          li.list-cities__item
+            h3.list-cities__item-title= item.letterCity
+            ul.list-cities__sublist
+              each e, i in item.cites
+                li
+                  a(href="#")= e
+    .modal-location__footer
+      +copyright("img/content/develop-dark.svg")

@@ -1,0 +1,12 @@
+mixin modal-menu()
+  +modal({
+    id: 'modal-menu',
+    header: true,
+    tpl: `<a class="link-menu arrow " href="#modal-location" data-fancybox="">
+            <svg class="link-menu__icon link-menu__icon--m-right" width="10" height="10">
+              <use href="img/symbols.svg#icon-location"></use>
+            </svg>Ижевск
+          </a>`,
+  }).modal-menu
+    +navigation(mobNavMenu)
+    +popover

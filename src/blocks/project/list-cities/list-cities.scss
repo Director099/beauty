@@ -1,0 +1,38 @@
+.list-cities__inner {
+  @include ul-none;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(101px, 1fr));
+  grid-gap: 24px 54px;
+
+  @media (min-width: $screen-xl) {
+    grid-gap: 29px 54px;
+    grid-template-columns: repeat(auto-fill, minmax(174px, 1fr));
+  }
+}
+
+.list-cities__sublist {
+  @include ul-none;
+}
+
+.list-cities__item {
+
+
+  @media (min-width: $screen-xl) {
+    font-size: 17px;
+    line-height: 24px;
+  }
+}
+
+.list-cities__item-title {
+  font-size: 17px;
+  line-height: 24px;
+  color: #AA8475;
+  margin-bottom: 12px;
+  font-weight: 700;
+}
+
+.list-cities__sublist a {
+  color: #222222;
+  text-decoration: initial;
+  text-transform: capitalize;
+}

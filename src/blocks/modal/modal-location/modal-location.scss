@@ -1,0 +1,94 @@
+.modal-location {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 0;
+  overflow: auto;
+
+  .carousel__button {
+    display: none;
+  }
+}
+
+.modal-location .modal__dialog {
+  width: 100%;
+  min-height: 100%;
+}
+
+.modal-location .modal__content {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  padding: 0px 20px 20px;
+  background-image: url("../img/decor/bg-change-city.jpg");
+  background-color: #F2F2F2;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media (min-width: $screen-xl) {
+    gap: 56px;
+    padding-top: 8px;
+  }
+}
+
+.modal-location .link-doc {
+  color: #7E7674;
+}
+
+.modal-location__header {
+  text-align: center;
+}
+
+.modal-location__header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-bottom: 6px;
+  border-bottom: 1px solid #D1C6C1;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #AA8475;
+
+  @media (min-width: $screen-xl) {
+    font-size: 17px;
+    padding-bottom: 17px;
+  }
+}
+
+.modal-location__title {
+  margin-bottom: 0;
+}
+
+.modal-location__close {
+  border: none;
+  padding: 5px;
+  flex-shrink: 0;
+  line-height: 1;
+  cursor: pointer;
+
+  svg {
+    vertical-align: middle;
+  }
+}
+
+.modal-location__content {
+  flex: 1 0 auto;
+}
+
+.modal-location__footer {
+  padding-top: 27px;
+  border-top: 1px solid #D1C6C1;
+  flex: 0 0 auto;
+}
+
+.modal-location__logo {
+  margin-bottom: 29px;
+
+  @media (min-width: $screen-xl) {
+    margin-bottom: 0;
+  }
+}

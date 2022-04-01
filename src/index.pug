@@ -1,0 +1,19 @@
+extends pug/layout.pug
+
+block meta
+  title Главная
+block header
+
+block content
+  .page-main
+    +page-header("img/content/logo-white.svg", true).page-main__header
+    main.page-main__content.page-main__content--center
+      section.page-main__wrap
+        h1.title-display-big.page-main__title Международная сеть салонов профессионального массажа
+        .page-main__btns
+          each item, i in linkPageIndex
+            a.btn(href=item.href)= item.title
+    footer.page-main__footer
+      +copyright("img/content/develop.svg")
+block footer
+//-  +page-footer()

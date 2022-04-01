@@ -1,0 +1,1296 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="date=no">
+    <meta name="format-detection" content="address=no">
+    <meta name="format-detection" content="email=no">
+    <meta content="notranslate" name="google">
+    <meta property="og:image" content="img/sharing/logo.png">
+    <meta property="vk:image" content="img/sharing/logo.png">
+    <meta name="twitter:image:src" content="img/sharing/logo.png">
+    <link rel="icon" type="image/ico" sizes="16x16" href="img/favicon/favicon-16x16.ico">
+    <link rel="stylesheet" href="libs/@fancyapps/ui/dist/fancybox.css">
+    <link rel="stylesheet" href="libs/flickity/flickity.min.css">
+    <link rel="stylesheet" href="libs/swiper/swiper.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#fffff">
+    <meta name="msapplication-navbutton-color" content="#000">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+    <title>Главная</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <button class="burger d-xl-none" aria-label="Открыть меню" data-src="#modal-menu" data-fancybox="">
+        <span>Открыть меню</span>
+      </button>
+      <nav class="navigation d-none d-xl-block">
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a class="navigation__link link-menu js-scroll" href="#about">О компании</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link link-menu js-scroll" href="#service">Услуги и цены</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link link-menu js-scroll" href="#review">Отзывы</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link link-menu js-scroll arrow" href="#contact">Контакты</a>
+            <div class="popover">
+              <div class="popover__top-block">
+                <a class="btn btn--b-tr">Заказать звонок</a>
+              </div>
+              <ul class="popover__list">
+                <li class="popover__item">
+                  <div class="popover__header">
+                    <span>Телефон</span>
+                  </div>
+                  <a class="popover__link" href="tel:+78001016897">+7 800 101 68 97</a>
+                </li>
+                <li class="popover__item">
+                  <div class="popover__header">
+                    <span>Режим работы</span>
+                  </div>
+                  <span class="popover__link">Продукция пн-пт — 10:00–20:00</span>
+                  <span class="popover__link">Продукция сб-вс — Выходной</span>
+                </li>
+                <li class="popover__item">
+                  <div class="popover__header">
+                    <span>Электронная почта</span>
+                  </div>
+                  <a class="popover__link" href="mailto:tehnoelast@bk.ru">
+                    <img src="img/sprite/icon-mail-ios.svg" alt="Иконка" />
+                    <span>tehnoelast@bk.ru</span>
+                  </a>
+                </li>
+                <li class="popover__item">
+                  <div class="popover__header">
+                    <span>Мессенджеры</span>
+                  </div>
+                  <a class="popover__link popover__link--big" href="mailto:tehnoelast@bk.ru">
+                    <img src="img/sprite/icon-tg.svg" alt="Иконка" />
+                    <span>Telegram</span>
+                  </a>
+                  <a class="popover__link popover__link--big" href="mailto:tehnoelast@bk.ru">
+                    <img src="img/sprite/icon-wp.svg" alt="Иконка" />
+                    <span>WhatsApp</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </nav>
+      <a class="logo page-header__logo" href="index.html">
+        <img src="img/content/logo.svg" alt="Logo" />
+      </a>
+      <div class="page-header__right">
+        <a class="link-menu link-menu--m-icon" href="tel:88001016897">
+          <svg class="link-menu__icon link-menu__icon--m-right" width="10" height="10">
+            <use href="img/symbols.svg#icon-phone"></use>
+          </svg>8 800 101 68 97
+        </a>
+        <a class="link-menu arrow d-none d-xl-flex" href="#modal-location" data-fancybox="">
+          <svg class="link-menu__icon link-menu__icon--m-right" width="10" height="10">
+            <use href="img/symbols.svg#icon-location"></use>
+          </svg>Ижевск
+        </a>
+      </div>
+    </header>
+    <div class="main-content">
+      <main>
+        <div class="card    full-page" id="about">
+          <section class="card-content">
+            <span class="full-page__descriptor">«Мечта Бьюти» – с нами быть красивыми легко!</span>
+            <h1 class="full-page__title title-h1">Международная сеть салонов профессионального массажа</h1>
+            <p class="full-page__desc">Запишись на массаж всего тела 60 мин. всего за 1950 руб</p>
+            <a class="btn btn--s-big" href="#">Записаться на массаж</a>
+          </section>
+          <picture>
+            <source media="(min-width: 1233px)" srcset="img/content/main-picture.png" />
+            <img class="full-page__main-picture" src="img/content/main-picture-mob.png" alt="Международная сеть салонов профессионального массажа" />
+          </picture>
+        </div>
+        <div class="grid-row main-content__mb-grid">
+          <div class="grid-row__col grid-row__col--xl-6">
+            <div class="card   advantage advantage--1" style="background-image: url('img/decor/adv-decor-1.jpg')">
+              <section class="card-content">
+                <h3 class="card-content__title-service text-h1">Собственный бренд косметики</h3>
+                <picture>
+                  <source media="(min-width: 1233px)" srcset="img/content/adv-content-1.png">
+                  <img class="advantage__img" src="img/content/adv-content-mob-1.png" alt="Продукция">
+                </picture>
+                <a class="btn" href="#" target="_blank">Интернет-магазин</a>
+              </section>
+            </div>
+          </div>
+          <div class="grid-row__col grid-row__col--xl-6">
+            <div class="card   advantage advantage--2" style="background-image: url('img/decor/adv-decor-2.jpg')">
+              <section class="card-content">
+                <h3 class="card-content__title-service text-h1">Специалисты
+                  <br>только с медицинским образованием
+                </h3>
+                <picture>
+                  <source media="(min-width: 1233px)" srcset="img/content/adv-content-2.png">
+                  <img class="advantage__img" src="img/content/adv-content-mob-2.png" alt="Продукция">
+                </picture>
+              </section>
+            </div>
+          </div>
+          <div class="grid-row__col">
+            <div class="card  card--content-center advantage advantage--3" style="background-image: url('img/decor/adv-picture-1.jpg')">
+              <section class="card-content">
+                <h3 class="card-content__title-service text-h1 title-h2">Новости компании</h3>
+                <a class="btn" href="https://youtu.be/wtnKxsq8LyY" data-fancybox="">Смотреть видео<svg class="btn__icon btn__icon--m-left" width="20" height="20">
+                    <use href="img/symbols.svg#icon-play"></use>
+                  </svg>
+                </a>
+              </section>
+            </div>
+          </div>
+          <div class="grid-row__col grid-row__col--xl-4">
+            <div class="card   advantage advantage--height advantage--4" style="background-image: url('img/decor/adv-decor-3.jpg')">
+              <section class="card-content">
+                <h3 class="card-content__title-service text-h1">Предоставляем документы в налоговую на возврат 13% по мед услугам</h3>
+                <picture>
+                  <source media="(min-width: 1233px)" srcset="img/content/adv-content-3.png">
+                  <img class="advantage__img" src="img/content/adv-content-mob-3.png" alt="Продукция">
+                </picture>
+              </section>
+            </div>
+          </div>
+          <div class="grid-row__col grid-row__col--xl-4">
+            <div class="card   advantage advantage--height advantage--5" style="background-image: url('img/decor/adv-decor-4.jpg')">
+              <section class="card-content">
+                <h3 class="card-content__title-service text-h1">Оказываем услуги массажа по ДМС по спец ценам</h3>
+                <picture>
+                  <source media="(min-width: 1233px)" srcset="img/content/adv-content-4.png">
+                  <img class="advantage__img" src="img/content/adv-content-mob-4.png" alt="Продукция">
+                </picture>
+                <a class="btn" href="#" target="_blank">Получить расчет</a>
+              </section>
+            </div>
+          </div>
+          <div class="grid-row__col grid-row__col--xl-4">
+            <div class="card   advantage advantage--height advantage--6" style="background-image: url('img/decor/adv-decor-3.jpg')">
+              <section class="card-content">
+                <h3 class="card-content__title-service text-h1 title-h2">Работаем более
+                  <br> 15 лет
+                </h3>
+                <picture>
+                  <source media="(min-width: 1233px)" srcset="img/content/adv-content-5.png">
+                  <img class="advantage__img" src="img/content/adv-content-5.png" alt="Продукция">
+                </picture>
+              </section>
+            </div>
+          </div>
+        </div>
+        <div class="block-multilevel" id="service">
+          <header class="block-multilevel__header block-multilevel__header--center">
+            <h2 class="block-multilevel__title title-display-big">Услуги и цены</h2>
+          </header>
+          <div class="tabs  tabs--block-type tabs--links-mob-hide">
+            <div class="tabs__header">
+              <button class="tabs__btn-dropdown btn d-xl-none">Комплексные предложения</button>
+              <ul class="tabs__links" role="tablist">
+                <li class="tabs__link-wrap   tabs__link-wrap--active" role="presentation">
+                  <a class="tabs__link" href="#block-type-0" data-toggle="tab" role="tab">Комплексные предложения</a>
+                </li>
+                <li class="tabs__link-wrap" role="presentation">
+                  <a class="tabs__link" href="#block-type-1" data-toggle="tab" role="tab">Основные услуги</a>
+                </li>
+                <li class="tabs__link-wrap" role="presentation">
+                  <a class="tabs__link" href="#block-type-2" data-toggle="tab" role="tab">Дополнительные услуги</a>
+                </li>
+              </ul>
+            </div>
+            <div class="tabs__content-wrapper">
+              <div class="tabs__content-item   tabs__content-item--active" id="block-type-0" role="tabpanel">
+                <div class="block-type block-personal">
+                  <button class="slider-arrow slider-arrow--prev swiper-button-prev" type="button" aria-label="Следующий слайд"></button>
+                  <button class="slider-arrow slider-arrow--next swiper-button-next" type="button" aria-label="Предыдущий слайд"></button>
+                  <div class="block-type__overflow">
+                    <div class="js-slider-auto-width block-type__slider">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide block-type__slide-personal">
+                          <div class="card card--content-end  card--service" style="background-image: url('img/decor/service-1.jpg')">
+                            <section class="card-content">
+                              <h3 class="card-content__title-name">Болит спина?</h3>
+                              <ul class="card-content__list-short-text">
+                                <li class="card-content__short-text">- Массажное масло 100 мл</li>
+                                <li class="card-content__short-text">- Фитосолевое обертывание 1 сеанс</li>
+                                <li class="card-content__short-text">- 10 сеансов массажа спины 30 мин</li>
+                              </ul>
+                              <div class="card-content__bottom-content">
+                                <span class="card-content__price">9723<svg width="10" height="13">
+                                    <use href="img/symbols.svg#icon-rub"></use>
+                                  </svg>
+                                </span>
+                                <a class="btn" href="#modal-callback" data-fancybox="">Записаться</a>
+                              </div>
+                            </section>
+                          </div>
+                        </div>
+                        <div class="swiper-slide block-type__slide-personal">
+                          <div class="card card--content-end  card--service" style="background-image: url('img/decor/service-2.jpg')">
+                            <section class="card-content">
+                              <h3 class="card-content__title-name">Общеоздоравливаю-щая</h3>
+                              <ul class="card-content__list-short-text">
+                                <li class="card-content__short-text">- Массажное масло 100 мл</li>
+                                <li class="card-content__short-text">- Фитосолевое обертывание 1 сеанс</li>
+                              </ul>
+                              <div class="card-content__bottom-content">
+                                <span class="card-content__price">15393<svg width="10" height="13">
+                                    <use href="img/symbols.svg#icon-rub"></use>
+                                  </svg>
+                                </span>
+                                <a class="btn" href="#modal-callback" data-fancybox="">Записаться</a>
+                              </div>
+                            </section>
+                          </div>
+                        </div>
+                        <div class="swiper-slide block-type__slide-personal">
+                          <div class="card card--content-end  card--service" style="background-image: url('img/decor/service-3.jpg')">
+                            <section class="card-content">
+                              <h3 class="card-content__title-name">Хотите похудеть?</h3>
+                              <ul class="card-content__list-short-text">
+                                <li class="card-content__short-text">- Массажное масло 100 мл</li>
+                              </ul>
+                              <div class="card-content__bottom-content">
+                                <span class="card-content__price">9723<svg width="10" height="13">
+                                    <use href="img/symbols.svg#icon-rub"></use>
+                                  </svg>
+                                </span>
+                                <a class="btn" href="#modal-callback" data-fancybox="">Записаться</a>
+                              </div>
+                            </section>
+                          </div>
+                        </div>
+                        <div class="swiper-slide block-type__slide-personal">
+                          <div class="card card--content-end  card--service" style="background-image: url('img/decor/service-4.jpg')">
+                            <section class="card-content">
+                              <h3 class="card-content__title-name">Хотите помолодеть?</h3>
+                              <ul class="card-content__list-short-text">
+                                <li class="card-content__short-text">- Массажное масло 100 мл</li>
+                                <li class="card-content__short-text">- Фитосолевое обертывание 1 сеанс</li>
+                                <li class="card-content__short-text">- 10 сеансов массажа спины 30 мин</li>
+                              </ul>
+                              <div class="card-content__bottom-content">
+                                <span class="card-content__price">14300<svg width="10" height="13">
+                                    <use href="img/symbols.svg#icon-rub"></use>
+                                  </svg>
+                                </span>
+                                <a class="btn" href="#modal-callback" data-fancybox="">Записаться</a>
+                              </div>
+                            </section>
+                          </div>
+                        </div>
+                        <div class="swiper-slide block-type__slide-personal">
+                          <div class="card card--content-end  card--service" style="background-image: url('img/decor/service-5.jpg')">
+                            <section class="card-content">
+                              <h3 class="card-content__title-name">SPA выходного дня</h3>
+                              <ul class="card-content__list-short-text">
+                                <li class="card-content__short-text">- Массажное масло 100 мл</li>
+                                <li class="card-content__short-text">- Фитосолевое обертывание 1 сеанс</li>
+                                <li class="card-content__short-text">- 10 сеансов массажа спины 30 мин</li>
+                              </ul>
+                              <div class="card-content__bottom-content">
+                                <span class="card-content__price">3780<svg width="10" height="13">
+                                    <use href="img/symbols.svg#icon-rub"></use>
+                                  </svg>
+                                </span>
+                                <a class="btn" href="#modal-callback" data-fancybox="">Записаться</a>
+                              </div>
+                            </section>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tabs__content-item" id="block-type-1" role="tabpanel">
+                <div class="block-type block-personal">
+                  <button class="slider-arrow slider-arrow--prev swiper-button-prev" type="button" aria-label="Следующий слайд"></button>
+                  <button class="slider-arrow slider-arrow--next swiper-button-next" type="button" aria-label="Предыдущий слайд"></button>
+                  <div class="block-type__overflow">
+                    <p class="block-personal__warning">*Предложение действует при вервом посещении</p>
+                    <div class="js-slider-auto-width block-type__slider">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide block-type__slide-personal">
+                          <div class="card card--content-end  card--service" style="background-image: url('img/decor/service-1.jpg')">
+                            <section class="card-content">
+                              <h3 class="card-content__title-name">Болит спина?</h3>
+                              <ul class="card-content__list-short-text">
+                                <li class="card-content__short-text">- Массажное масло 100 мл</li>
+                                <li class="card-content__short-text">- Фитосолевое обертывание 1 сеанс</li>
+                                <li class="card-content__short-text">- 10 сеансов массажа спины 30 мин</li>
+                              </ul>
+                              <div class="card-content__bottom-content">
+                                <span class="card-content__price">9723<svg width="10" height="13">
+                                    <use href="img/symbols.svg#icon-rub"></use>
+                                  </svg>
+                                </span>
+                                <a class="btn" href="#modal-callback" data-fancybox="">Записаться</a>
+                              </div>
+                            </section>
+                          </div>
+                        </div>
+                        <div class="swiper-slide block-type__slide-personal">
+                          <div class="card card--content-end  card--service" style="background-image: url('img/decor/service-2.jpg')">
+                            <section class="card-content">
+                              <h3 class="card-content__title-name">Общеоздоравливаю-щая</h3>
+                              <ul class="card-content__list-short-text">
+                                <li class="card-content__short-text">- Массажное масло 100 мл</li>
+                                <li class="card-content__short-text">- Фитосолевое обертывание 1 сеанс</li>
+                              </ul>
+                              <div class="card-content__bottom-content">
+                                <span class="card-content__price">15393<svg width="10" height="13">
+                                    <use href="img/symbols.svg#icon-rub"></use>
+                                  </svg>
+                                </span>
+                                <a class="btn" href="#modal-callback" data-fancybox="">Записаться</a>
+                              </div>
+                            </section>
+                          </div>
+                        </div>
+                        <div class="swiper-slide block-type__slide-personal">
+                          <div class="card card--content-end  card--service" style="background-image: url('img/decor/service-3.jpg')">
+                            <section class="card-content">
+                              <h3 class="card-content__title-name">Хотите похудеть?</h3>
+                              <ul class="card-content__list-short-text">
+                                <li class="card-content__short-text">- Массажное масло 100 мл</li>
+                              </ul>
+                              <div class="card-content__bottom-content">
+                                <span class="card-content__price">9723<svg width="10" height="13">
+                                    <use href="img/symbols.svg#icon-rub"></use>
+                                  </svg>
+                                </span>
+                                <a class="btn" href="#modal-callback" data-fancybox="">Записаться</a>
+                              </div>
+                            </section>
+                          </div>
+                        </div>
+                        <div class="swiper-slide block-type__slide-personal">
+                          <div class="card card--content-end  card--service" style="background-image: url('img/decor/service-4.jpg')">
+                            <section class="card-content">
+                              <h3 class="card-content__title-name">Хотите помолодеть?</h3>
+                              <ul class="card-content__list-short-text">
+                                <li class="card-content__short-text">- Массажное масло 100 мл</li>
+                                <li class="card-content__short-text">- Фитосолевое обертывание 1 сеанс</li>
+                                <li class="card-content__short-text">- 10 сеансов массажа спины 30 мин</li>
+                              </ul>
+                              <div class="card-content__bottom-content">
+                                <span class="card-content__price">14300<svg width="10" height="13">
+                                    <use href="img/symbols.svg#icon-rub"></use>
+                                  </svg>
+                                </span>
+                                <a class="btn" href="#modal-callback" data-fancybox="">Записаться</a>
+                              </div>
+                            </section>
+                          </div>
+                        </div>
+                        <div class="swiper-slide block-type__slide-personal">
+                          <div class="card card--content-end  card--service" style="background-image: url('img/decor/service-5.jpg')">
+                            <section class="card-content">
+                              <h3 class="card-content__title-name">SPA выходного дня</h3>
+                              <ul class="card-content__list-short-text">
+                                <li class="card-content__short-text">- Массажное масло 100 мл</li>
+                                <li class="card-content__short-text">- Фитосолевое обертывание 1 сеанс</li>
+                                <li class="card-content__short-text">- 10 сеансов массажа спины 30 мин</li>
+                              </ul>
+                              <div class="card-content__bottom-content">
+                                <span class="card-content__price">3780<svg width="10" height="13">
+                                    <use href="img/symbols.svg#icon-rub"></use>
+                                  </svg>
+                                </span>
+                                <a class="btn" href="#modal-callback" data-fancybox="">Записаться</a>
+                              </div>
+                            </section>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tabs__content-item" id="block-type-2" role="tabpanel">
+                <div class="block-type block-personal">
+                  <button class="slider-arrow slider-arrow--prev swiper-button-prev" type="button" aria-label="Следующий слайд"></button>
+                  <button class="slider-arrow slider-arrow--next swiper-button-next" type="button" aria-label="Предыдущий слайд"></button>
+                  <div class="block-type__overflow">
+                    <div class="filter-group">
+                      <ul class="tab-filter">
+                        <li class="tab-filter__item">
+                          <a class="tab-filter__btn active" data-btn-filter="depilation">Депиляция</a>
+                        </li>
+                        <li class="tab-filter__item">
+                          <a class="tab-filter__btn" data-btn-filter="epilation">Эпиляция</a>
+                        </li>
+                        <li class="tab-filter__item">
+                          <a class="tab-filter__btn" data-btn-filter="lymphatic-procedures">Лимфодренажные процедуры</a>
+                        </li>
+                      </ul>
+                      <div class="js-slider-auto-width block-type__slider">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide block-type__slide-personal d-none" data-filter="depilation">
+                            <div class="card card--content-end  card--service" style="background-image: url('img/decor/service-1.jpg')">
+                              <section class="card-content">
+                                <h3 class="card-content__title-name">Болит спина?</h3>
+                                <ul class="card-content__list-short-text">
+                                  <li class="card-content__short-text">- Массажное масло 100 мл</li>
+                                  <li class="card-content__short-text">- Фитосолевое обертывание 1 сеанс</li>
+                                  <li class="card-content__short-text">- 10 сеансов массажа спины 30 мин</li>
+                                </ul>
+                                <div class="card-content__bottom-content">
+                                  <span class="card-content__price">9723<svg width="10" height="13">
+                                      <use href="img/symbols.svg#icon-rub"></use>
+                                    </svg>
+                                  </span>
+                                  <a class="btn" href="#modal-callback" data-fancybox="">Записаться</a>
+                                </div>
+                              </section>
+                            </div>
+                          </div>
+                          <div class="swiper-slide block-type__slide-personal d-none" data-filter="depilation">
+                            <div class="card card--content-end  card--service" style="background-image: url('img/decor/service-2.jpg')">
+                              <section class="card-content">
+                                <h3 class="card-content__title-name">Общеоздоравливаю-щая</h3>
+                                <ul class="card-content__list-short-text">
+                                  <li class="card-content__short-text">- Массажное масло 100 мл</li>
+                                  <li class="card-content__short-text">- Фитосолевое обертывание 1 сеанс</li>
+                                </ul>
+                                <div class="card-content__bottom-content">
+                                  <span class="card-content__price">15393<svg width="10" height="13">
+                                      <use href="img/symbols.svg#icon-rub"></use>
+                                    </svg>
+                                  </span>
+                                  <a class="btn" href="#modal-callback" data-fancybox="">Записаться</a>
+                                </div>
+                              </section>
+                            </div>
+                          </div>
+                          <div class="swiper-slide block-type__slide-personal" data-filter="epilation">
+                            <div class="card card--content-end  card--service" style="background-image: url('img/decor/service-3.jpg')">
+                              <section class="card-content">
+                                <h3 class="card-content__title-name">Хотите похудеть?</h3>
+                                <ul class="card-content__list-short-text">
+                                  <li class="card-content__short-text">- Массажное масло 100 мл</li>
+                                </ul>
+                                <div class="card-content__bottom-content">
+                                  <span class="card-content__price">9723<svg width="10" height="13">
+                                      <use href="img/symbols.svg#icon-rub"></use>
+                                    </svg>
+                                  </span>
+                                  <a class="btn" href="#modal-callback" data-fancybox="">Записаться</a>
+                                </div>
+                              </section>
+                            </div>
+                          </div>
+                          <div class="swiper-slide block-type__slide-personal" data-filter="lymphatic-procedures">
+                            <div class="card card--content-end  card--service" style="background-image: url('img/decor/service-4.jpg')">
+                              <section class="card-content">
+                                <h3 class="card-content__title-name">Хотите помолодеть?</h3>
+                                <ul class="card-content__list-short-text">
+                                  <li class="card-content__short-text">- Массажное масло 100 мл</li>
+                                  <li class="card-content__short-text">- Фитосолевое обертывание 1 сеанс</li>
+                                  <li class="card-content__short-text">- 10 сеансов массажа спины 30 мин</li>
+                                </ul>
+                                <div class="card-content__bottom-content">
+                                  <span class="card-content__price">14300<svg width="10" height="13">
+                                      <use href="img/symbols.svg#icon-rub"></use>
+                                    </svg>
+                                  </span>
+                                  <a class="btn" href="#modal-callback" data-fancybox="">Записаться</a>
+                                </div>
+                              </section>
+                            </div>
+                          </div>
+                          <div class="swiper-slide block-type__slide-personal" data-filter="lymphatic-procedures">
+                            <div class="card card--content-end  card--service" style="background-image: url('img/decor/service-5.jpg')">
+                              <section class="card-content">
+                                <h3 class="card-content__title-name">SPA выходного дня</h3>
+                                <ul class="card-content__list-short-text">
+                                  <li class="card-content__short-text">- Массажное масло 100 мл</li>
+                                  <li class="card-content__short-text">- Фитосолевое обертывание 1 сеанс</li>
+                                  <li class="card-content__short-text">- 10 сеансов массажа спины 30 мин</li>
+                                </ul>
+                                <div class="card-content__bottom-content">
+                                  <span class="card-content__price">3780<svg width="10" height="13">
+                                      <use href="img/symbols.svg#icon-rub"></use>
+                                    </svg>
+                                  </span>
+                                  <a class="btn" href="#modal-callback" data-fancybox="">Записаться</a>
+                                </div>
+                              </section>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="block-type block-personal" id="personal">
+          <button class="slider-arrow slider-arrow--prev swiper-button-prev" type="button" aria-label="Следующий слайд"></button>
+          <button class="slider-arrow slider-arrow--next swiper-button-next" type="button" aria-label="Предыдущий слайд"></button>
+          <div class="block-type__overflow">
+            <section class="block-type__header">
+              <h2 class="block-type__title title-h2">Специалисты
+                <br>массажа
+              </h2>
+            </section>
+            <div class="js-slider-auto-width block-type__slider">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide block-type__slide-personal">
+                  <div class="card card--content-end  card--personal">
+                    <img class="card__img" src="img/content/persona-1.png" alt="Изображение" />
+                    <section class="card-content">
+                      <h3 class="card-content__title-name">Имя Фамилия</h3>
+                      <ul class="card-content__list-short-text">
+                        <li class="card-content__short-text">Должность</li>
+                      </ul>
+                    </section>
+                  </div>
+                </div>
+                <div class="swiper-slide block-type__slide-personal">
+                  <div class="card card--content-end  card--personal">
+                    <img class="card__img" src="img/content/persona-2.png" alt="Изображение" />
+                    <section class="card-content">
+                      <h3 class="card-content__title-name">Имя Фамилия</h3>
+                      <ul class="card-content__list-short-text">
+                        <li class="card-content__short-text">Должность</li>
+                      </ul>
+                    </section>
+                  </div>
+                </div>
+                <div class="swiper-slide block-type__slide-personal">
+                  <div class="card card--content-end  card--personal">
+                    <img class="card__img" src="img/content/persona-3.png" alt="Изображение" />
+                    <section class="card-content">
+                      <h3 class="card-content__title-name">Имя Фамилия</h3>
+                      <ul class="card-content__list-short-text">
+                        <li class="card-content__short-text">Должность</li>
+                      </ul>
+                    </section>
+                  </div>
+                </div>
+                <div class="swiper-slide block-type__slide-personal">
+                  <div class="card card--content-end  card--personal">
+                    <img class="card__img" src="img/content/persona-4.png" alt="Изображение" />
+                    <section class="card-content">
+                      <h3 class="card-content__title-name">Имя Фамилия</h3>
+                      <ul class="card-content__list-short-text">
+                        <li class="card-content__short-text">Должность</li>
+                      </ul>
+                    </section>
+                  </div>
+                </div>
+                <div class="swiper-slide block-type__slide-personal">
+                  <div class="card card--content-end  card--personal">
+                    <img class="card__img" src="img/content/persona-5.png" alt="Изображение" />
+                    <section class="card-content">
+                      <h3 class="card-content__title-name">Имя Фамилия</h3>
+                      <ul class="card-content__list-short-text">
+                        <li class="card-content__short-text">Должность</li>
+                      </ul>
+                    </section>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="block-type block-gallery" id="gallery">
+          <div class="block-type__overflow">
+            <section class="block-type__header block-type__header--white block-type__header--center">
+              <h2 class="block-type__title title-h2">Фотогалерея студии</h2>
+              <p class="block-type__description">Почувствуйте особую атмосферу уюта и доброжелательности</p>
+            </section>
+            <div class="js-slider-marquee-top block-gallery__slider">
+              <div class="block-type__slide-gallery">
+                <div class="card card--content-end  card--gallery-normal" data-src="img/content/gallery-normal-1.jpg" data-fancybox="gallery">
+                  <img class="card__img" src="img/content/gallery-normal-1.jpg" alt="Изображение" />
+                </div>
+              </div>
+              <div class="block-type__slide-gallery">
+                <div class="card card--content-end  card--gallery-normal" data-src="img/content/gallery-normal-2.jpg" data-fancybox="gallery">
+                  <img class="card__img" src="img/content/gallery-normal-2.jpg" alt="Изображение" />
+                </div>
+              </div>
+              <div class="block-type__slide-gallery">
+                <div class="card card--content-end  card--gallery-normal" data-src="img/content/gallery-normal-3.jpg" data-fancybox="gallery">
+                  <img class="card__img" src="img/content/gallery-normal-3.jpg" alt="Изображение" />
+                </div>
+              </div>
+              <div class="block-type__slide-gallery">
+                <div class="card card--content-end  card--gallery-normal" data-src="img/content/gallery-normal-4.jpg" data-fancybox="gallery">
+                  <img class="card__img" src="img/content/gallery-normal-4.jpg" alt="Изображение" />
+                </div>
+              </div>
+            </div>
+            <div class="js-slider-marquee-bottom block-gallery__slider">
+              <div class="block-type__slide-gallery">
+                <div class="card card--content-end  card--gallery-small" data-src="img/content/gallery-small-1.jpg" data-fancybox="gallery">
+                  <img class="card__img" src="img/content/gallery-small-1.jpg" alt="Изображение" />
+                </div>
+              </div>
+              <div class="block-type__slide-gallery">
+                <div class="card card--content-end  card--gallery-small" data-src="img/content/gallery-small-2.jpg" data-fancybox="gallery">
+                  <img class="card__img" src="img/content/gallery-small-2.jpg" alt="Изображение" />
+                </div>
+              </div>
+              <div class="block-type__slide-gallery">
+                <div class="card card--content-end  card--gallery-small" data-src="img/content/gallery-small-3.jpg" data-fancybox="gallery">
+                  <img class="card__img" src="img/content/gallery-small-3.jpg" alt="Изображение" />
+                </div>
+              </div>
+              <div class="block-type__slide-gallery">
+                <div class="card card--content-end  card--gallery-small" data-src="img/content/gallery-small-4.jpg" data-fancybox="gallery">
+                  <img class="card__img" src="img/content/gallery-small-4.jpg" alt="Изображение" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="block-type block-review" id="review">
+          <button class="slider-arrow slider-arrow--prev swiper-button-prev" type="button" aria-label="Следующий слайд"></button>
+          <button class="slider-arrow slider-arrow--next swiper-button-next" type="button" aria-label="Предыдущий слайд"></button>
+          <div class="block-type__overflow">
+            <section class="block-type__header block-type__header--white">
+              <h2 class="block-type__title title-h2">Что говорят
+                <br>люди о нас
+              </h2>
+            </section>
+            <div class="js-slider-auto-width block-type__slider">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide block-type__slide-review">
+                  <div class="card card--content-end  card--review" data-fancybox="review" data-src="https://youtu.be/wtnKxsq8LyY">
+                    <img class="card__img" src="img/content/review.jpg" alt="Изображение" />
+                    <a class="btn card__btn-review">Смотреть отзыв<svg class="btn__icon btn__icon--m-left" width="20" height="20">
+                        <use href="img/symbols.svg#icon-play"></use>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+                <div class="swiper-slide block-type__slide-review">
+                  <div class="card card--content-end  card--review" data-fancybox="review" data-src="https://youtu.be/wtnKxsq8LyY">
+                    <img class="card__img" src="img/content/review.jpg" alt="Изображение" />
+                    <a class="btn card__btn-review">Смотреть отзыв<svg class="btn__icon btn__icon--m-left" width="20" height="20">
+                        <use href="img/symbols.svg#icon-play"></use>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+                <div class="swiper-slide block-type__slide-review">
+                  <div class="card card--content-end  card--review" data-fancybox="review" data-src="https://youtu.be/wtnKxsq8LyY">
+                    <img class="card__img" src="img/content/review.jpg" alt="Изображение" />
+                    <a class="btn card__btn-review">Смотреть отзыв<svg class="btn__icon btn__icon--m-left" width="20" height="20">
+                        <use href="img/symbols.svg#icon-play"></use>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+                <div class="swiper-slide block-type__slide-review">
+                  <div class="card card--content-end  card--review" data-fancybox="review" data-src="https://youtu.be/wtnKxsq8LyY">
+                    <img class="card__img" src="img/content/review.jpg" alt="Изображение" />
+                    <a class="btn card__btn-review">Смотреть отзыв<svg class="btn__icon btn__icon--m-left" width="20" height="20">
+                        <use href="img/symbols.svg#icon-play"></use>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+                <div class="swiper-slide block-type__slide-review">
+                  <div class="card card--content-end  card--review" data-fancybox="review" data-src="https://youtu.be/wtnKxsq8LyY">
+                    <img class="card__img" src="img/content/review.jpg" alt="Изображение" />
+                    <a class="btn card__btn-review">Смотреть отзыв<svg class="btn__icon btn__icon--m-left" width="20" height="20">
+                        <use href="img/symbols.svg#icon-play"></use>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="block-type block-social" id="social">
+          <div class="block-type__overflow">
+            <div class="container">
+              <div class="grid-row grid-row--xl-end">
+                <div class="grid-row__col grid-row__col--xl-6">
+                  <section class="social-content">
+                    <h3 class="social-content__title title-h3">Подпишись
+                      <br> на наши обновления в социальных сетях
+                    </h3>
+                    <p class="social-content__desc">Чтобы первыми узнавать об акциях, скидках</p>
+                    <div class="social-content__btn">
+                      <a class="btn btn--dark" href="#" target="_blank">Instagram
+                        <img class="btn__icon btn__icon--m-left" src="img/content/icon-instagram.svg" alt="Instagram">
+                      </a>
+                      <a class="btn btn--dark" href="#" target="_blank">ВКонтакте
+                        <img class="btn__icon btn__icon--m-left" src="img/content/icon-vk.svg" alt="ВКонтакте">
+                      </a>
+                      <a class="btn btn--dark" href="#" target="_blank">YouTube
+                        <img class="btn__icon btn__icon--m-left" src="img/content/icon-youtube.svg" alt="YouTube">
+                      </a>
+                      <a class="btn btn--dark" href="#" target="_blank">Tik-Tok
+                        <img class="btn__icon btn__icon--m-left" src="img/content/icon-tik-tok.svg" alt="Tik-Tok">
+                      </a>
+                    </div>
+                  </section>
+                </div>
+                <div class="grid-row__col grid-row__col--xl-6">
+                  <div class="block-social__picture">
+                    <img src="img/content/block-social-phone.png" alt="Наши Соц сети">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer class="block-type page-footer" id="contact">
+        <div class="block-type__overflow">
+          <div class="container">
+            <div class="page-footer__row page-footer__mb-small page-footer__row--top">
+              <div class="page-footer__column">
+                <h2 class="block-type__title block-type__title--white title-h1">Контакты</h2>
+              </div>
+              <div class="page-footer__column">
+                <a class="logo" href="index.html">
+                  <img src="img/content/logo-white.svg" alt="Logo" />
+                </a>
+              </div>
+            </div>
+            <div class="page-footer__row page-footer__mb-middle">
+              <div class="page-footer__column">
+                <div class="page-footer__info">
+                  <div class="info">
+                    <strong class="info__title">Приезжайте в Ижевске</strong>
+                    <ul class="info__list">
+                      <li class="info__item">
+                        <span>ул. Пушкинская, 283, (ост. Администрация)</span>
+                      </li>
+                      <li class="info__item">
+                        <span>ул. Ворошилова, 27</span>
+                      </li>
+                      <li class="info__item">
+                        <span>ул. Школьная, 8</span>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="info">
+                    <strong class="info__title">Звоните</strong>
+                    <ul class="info__list">
+                      <li class="info__item">
+                        <a href="tel:+7(3412)677-297">+7 (3412) 677-297</a>
+                      </li>
+                      <li class="info__item">
+                        <a href="tel:+7(3412)677-297">+7 (3412) 677-297</a>
+                      </li>
+                      <li class="info__item">
+                        <a href="tel:+7(3412)677-297">+7 (3412) 677-297</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="info">
+                    <strong class="info__title">Следите</strong>
+                    <div class="info__list-btns">
+                      <a class="btn btn--b-tr" href="#" target="_blank">Instagram
+                        <img class="btn__icon btn__icon--m-left" src="img/content/icon-instagram.svg" alt="Instagram" />
+                      </a>
+                      <a class="btn btn--b-tr" href="#" target="_blank">ВКонтакте
+                        <img class="btn__icon btn__icon--m-left" src="img/content/icon-vk.svg" alt="ВКонтакте" />
+                      </a>
+                      <a class="btn btn--b-tr" href="#" target="_blank">YouTube
+                        <img class="btn__icon btn__icon--m-left" src="img/content/icon-youtube.svg" alt="YouTube" />
+                      </a>
+                      <a class="btn btn--b-tr" href="#" target="_blank">Tik-Tok
+                        <img class="btn__icon btn__icon--m-left" src="img/content/icon-tik-tok.svg" alt="Tik-Tok" />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="page-footer__column">
+                <ul class="list-doc page-footer__docs">
+                  <li class="list-doc__item">
+                    <a class="link-doc list-doc__link" href="#" target="_blank">Политика конфиденциальности</a>
+                  </li>
+                  <li class="list-doc__item">
+                    <a class="link-doc list-doc__link" href="#" target="_blank">Порядок оказания услуг </a>
+                  </li>
+                  <li class="list-doc__item">
+                    <a class="link-doc list-doc__link" href="#" target="_blank">Правила оказания медицинских услуг</a>
+                  </li>
+                  <li class="list-doc__item">
+                    <a class="link-doc list-doc__link" href="#" target="_blank">Информация о медицинской организации</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="page-footer__row page-footer__row--center">
+              <div class="page-footer__column">
+                <p class="link-doc link-doc--n-line">МЕДИЦИНСКАЯ ЛИЦЕНЗИЯ ЛО-18-01-002558 от 22 октября 2018 г.</p>
+              </div>
+              <div class="page-footer__column">
+                <a class="develop" href="https://pplans.ru/" target="_blank">
+                  <img src="img/content/develop.svg" alt="Веб студия «People Plans» — Разработка и продвижение лучших сайтов. Создание логотипов и фирменного стиля. Настройка контекстной рекламы и SEO продвижение." />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <div class="modal modal-location" id="modal-location" tabindex="-1" role="dialog">
+      <div class="modal__dialog" role="document">
+        <div class="modal__content">
+          <div class="modal-location__header">
+            <a class="logo modal-location__logo" href="/">
+              <img src="img/content/logo.svg" alt="Логотип" />
+            </a>
+            <section class="modal-location__header-row">
+              <h3 class="modal-location__title">Выберите город</h3>
+              <button class="modal-location__close" data-fancybox-close="data-fancybox-close" type="button">
+                <svg width="14" height="14">
+                  <use href="img/symbols.svg#icon-close"></use>
+                </svg>
+              </button>
+            </section>
+          </div>
+          <div class="list-cities modal-location__content">
+            <ul class="list-cities__inner">
+              <li class="list-cities__item">
+                <h3 class="list-cities__item-title">А</h3>
+                <ul class="list-cities__sublist">
+                  <li>
+                    <a href="#">Актобе</a>
+                  </li>
+                  <li>
+                    <a href="#">Алматы (4)</a>
+                  </li>
+                  <li>
+                    <a href="#">Астана (2)</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="list-cities__item">
+                <h3 class="list-cities__item-title">Б</h3>
+                <ul class="list-cities__sublist">
+                  <li>
+                    <a href="#">Балашиха (2)</a>
+                  </li>
+                  <li>
+                    <a href="#">Барнаул (3)</a>
+                  </li>
+                  <li>
+                    <a href="#">Белгород (2)</a>
+                  </li>
+                  <li>
+                    <a href="#">Булгаково</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="list-cities__item">
+                <h3 class="list-cities__item-title">К</h3>
+                <ul class="list-cities__sublist">
+                  <li>
+                    <a href="#">Казань (4)</a>
+                  </li>
+                  <li>
+                    <a href="#">Канск</a>
+                  </li>
+                  <li>
+                    <a href="#">Киев</a>
+                  </li>
+                  <li>
+                    <a href="#">Кингисепп</a>
+                  </li>
+                  <li>
+                    <a href="#">Королев</a>
+                  </li>
+                  <li>
+                    <a href="#">Костанай (2)</a>
+                  </li>
+                  <li>
+                    <a href="#">Красногорск (2)</a>
+                  </li>
+                  <li>
+                    <a href="#">Красноярск</a>
+                  </li>
+                  <li>
+                    <a href="#">Кудрово</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="list-cities__item">
+                <h3 class="list-cities__item-title">М</h3>
+                <ul class="list-cities__sublist">
+                  <li>
+                    <a href="#">Магадан</a>
+                  </li>
+                  <li>
+                    <a href="#">Магнитогорск (2)</a>
+                  </li>
+                  <li>
+                    <a href="#">Михайловск</a>
+                  </li>
+                  <li>
+                    <a href="#">Москва (10)</a>
+                  </li>
+                  <li>
+                    <a href="#">Мурманск</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="list-cities__item">
+                <h3 class="list-cities__item-title">Н</h3>
+                <ul class="list-cities__sublist">
+                  <li>
+                    <a href="#">Набережные Челны</a>
+                  </li>
+                  <li>
+                    <a href="#">Нефтекамск</a>
+                  </li>
+                  <li>
+                    <a href="#">Нижневартовск</a>
+                  </li>
+                  <li>
+                    <a href="#">Новокузнецк</a>
+                  </li>
+                  <li>
+                    <a href="#">Новороссийск</a>
+                  </li>
+                  <li>
+                    <a href="#">Новочеркасск </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="list-cities__item">
+                <h3 class="list-cities__item-title">О</h3>
+                <ul class="list-cities__sublist">
+                  <li>
+                    <a href="#">Одинцово</a>
+                  </li>
+                  <li>
+                    <a href="#">Октябрьский</a>
+                  </li>
+                  <li>
+                    <a href="#">Омск</a>
+                  </li>
+                  <li>
+                    <a href="#">Оренбург (2)</a>
+                  </li>
+                  <li>
+                    <a href="#">Орск</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="list-cities__item">
+                <h3 class="list-cities__item-title">П</h3>
+                <ul class="list-cities__sublist">
+                  <li>
+                    <a href="#">Пенза</a>
+                  </li>
+                  <li>
+                    <a href="#">Пермь</a>
+                  </li>
+                  <li>
+                    <a href="#">Петрозаводск</a>
+                  </li>
+                  <li>
+                    <a href="#">Подольск</a>
+                  </li>
+                  <li>
+                    <a href="#">Псков (2)</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="list-cities__item">
+                <h3 class="list-cities__item-title">А</h3>
+                <ul class="list-cities__sublist">
+                  <li>
+                    <a href="#">Актобе</a>
+                  </li>
+                  <li>
+                    <a href="#">Алматы (4)</a>
+                  </li>
+                  <li>
+                    <a href="#">Астана (2)</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="list-cities__item">
+                <h3 class="list-cities__item-title">Б</h3>
+                <ul class="list-cities__sublist">
+                  <li>
+                    <a href="#">Балашиха (2)</a>
+                  </li>
+                  <li>
+                    <a href="#">Барнаул (3)</a>
+                  </li>
+                  <li>
+                    <a href="#">Белгород (2)</a>
+                  </li>
+                  <li>
+                    <a href="#">Булгаково</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="list-cities__item">
+                <h3 class="list-cities__item-title">К</h3>
+                <ul class="list-cities__sublist">
+                  <li>
+                    <a href="#">Казань (4)</a>
+                  </li>
+                  <li>
+                    <a href="#">Канск</a>
+                  </li>
+                  <li>
+                    <a href="#">Киев</a>
+                  </li>
+                  <li>
+                    <a href="#">Кингисепп</a>
+                  </li>
+                  <li>
+                    <a href="#">Королев</a>
+                  </li>
+                  <li>
+                    <a href="#">Костанай (2)</a>
+                  </li>
+                  <li>
+                    <a href="#">Красногорск (2)</a>
+                  </li>
+                  <li>
+                    <a href="#">Красноярск</a>
+                  </li>
+                  <li>
+                    <a href="#">Кудрово</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="list-cities__item">
+                <h3 class="list-cities__item-title">М</h3>
+                <ul class="list-cities__sublist">
+                  <li>
+                    <a href="#">Магадан</a>
+                  </li>
+                  <li>
+                    <a href="#">Магнитогорск (2)</a>
+                  </li>
+                  <li>
+                    <a href="#">Михайловск</a>
+                  </li>
+                  <li>
+                    <a href="#">Москва (10)</a>
+                  </li>
+                  <li>
+                    <a href="#">Мурманск</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="list-cities__item">
+                <h3 class="list-cities__item-title">Н</h3>
+                <ul class="list-cities__sublist">
+                  <li>
+                    <a href="#">Набережные Челны</a>
+                  </li>
+                  <li>
+                    <a href="#">Нефтекамск</a>
+                  </li>
+                  <li>
+                    <a href="#">Нижневартовск</a>
+                  </li>
+                  <li>
+                    <a href="#">Новокузнецк</a>
+                  </li>
+                  <li>
+                    <a href="#">Новороссийск</a>
+                  </li>
+                  <li>
+                    <a href="#">Новочеркасск </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="list-cities__item">
+                <h3 class="list-cities__item-title">О</h3>
+                <ul class="list-cities__sublist">
+                  <li>
+                    <a href="#">Одинцово</a>
+                  </li>
+                  <li>
+                    <a href="#">Октябрьский</a>
+                  </li>
+                  <li>
+                    <a href="#">Омск</a>
+                  </li>
+                  <li>
+                    <a href="#">Оренбург (2)</a>
+                  </li>
+                  <li>
+                    <a href="#">Орск</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="list-cities__item">
+                <h3 class="list-cities__item-title">П</h3>
+                <ul class="list-cities__sublist">
+                  <li>
+                    <a href="#">Пенза</a>
+                  </li>
+                  <li>
+                    <a href="#">Пермь</a>
+                  </li>
+                  <li>
+                    <a href="#">Петрозаводск</a>
+                  </li>
+                  <li>
+                    <a href="#">Подольск</a>
+                  </li>
+                  <li>
+                    <a href="#">Псков (2)</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="modal-location__footer">
+            <div class="copyright">
+              <p class="link-doc link-doc--n-line copyright__link-dock">МЕДИЦИНСКАЯ ЛИЦЕНЗИЯ ЛО-18-01-002558 от 22 октября 2018 г.</p>
+              <a class="develop" href="https://pplans.ru/" target="_blank">
+                <img src="img/content/develop-dark.svg" alt="Веб студия «People Plans» — Разработка и продвижение лучших сайтов. Создание логотипов и фирменного стиля. Настройка контекстной рекламы и SEO продвижение." />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal modal-menu" id="modal-menu" tabindex="-1" role="dialog">
+      <div class="modal__dialog" role="document">
+        <div class="modal__content">
+          <div class="modal__header">
+            <span class="close modal__close modal__close--arrow" data-fancybox-close="" aria-label="Закрыть">
+              <span></span>
+            </span>
+            <a class="link-menu arrow " href="#modal-location" data-fancybox="">
+              <svg class="link-menu__icon link-menu__icon--m-right" width="10" height="10">
+                <use href="img/symbols.svg#icon-location"></use>
+              </svg>Ижевск
+            </a>
+          </div>
+          <nav class="navigation">
+            <ul class="navigation__list">
+              <li class="navigation__item">
+                <a class="navigation__link link-menu js-scroll" href="#about">О компании</a>
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link link-menu js-scroll" href="#service">Услуги и цены</a>
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link link-menu js-scroll" href="#review">Отзывы</a>
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link link-menu js-scroll" href="#contact">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="popover">
+            <ul class="popover__list">
+              <li class="popover__item">
+                <div class="popover__header">
+                  <span>Телефон</span>
+                </div>
+                <a class="popover__link" href="tel:+78001016897">+7 800 101 68 97</a>
+              </li>
+              <li class="popover__item">
+                <div class="popover__header">
+                  <span>Режим работы</span>
+                </div>
+                <span class="popover__link">Продукция пн-пт — 10:00–20:00</span>
+                <span class="popover__link">Продукция сб-вс — Выходной</span>
+              </li>
+              <li class="popover__item">
+                <div class="popover__header">
+                  <span>Электронная почта</span>
+                </div>
+                <a class="popover__link" href="mailto:tehnoelast@bk.ru">
+                  <img src="img/sprite/icon-mail-ios.svg" alt="Иконка" />
+                  <span>tehnoelast@bk.ru</span>
+                </a>
+              </li>
+              <li class="popover__item">
+                <div class="popover__header">
+                  <span>Мессенджеры</span>
+                </div>
+                <a class="popover__link popover__link--big" href="mailto:tehnoelast@bk.ru">
+                  <img src="img/sprite/icon-tg.svg" alt="Иконка" />
+                  <span>Telegram</span>
+                </a>
+                <a class="popover__link popover__link--big" href="mailto:tehnoelast@bk.ru">
+                  <img src="img/sprite/icon-wp.svg" alt="Иконка" />
+                  <span>WhatsApp</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal modal-callback" id="modal-callback" tabindex="-1" role="dialog">
+      <div class="modal__dialog" role="document">
+        <div class="modal__content">
+          <div class="modal__header">
+            <span class="close modal__close modal__close--arrow" data-fancybox-close="" aria-label="Закрыть">
+              <span></span>
+            </span>
+          </div>
+          <div class="modal__body">
+            <div class="block-form">
+              <form class="form js-form">
+                <div class="block-form__content">
+                  <h2 class="title-h3 block-form__title">Записаться</h2>
+                  <div class="block-form__group">
+                    <div class="form__group">
+                      <label class="field-text js-field">
+                        <span class="field-text__input-wrap">
+                          <span class="field-text__name">Ваше имя *</span>
+                          <input class="field-text__input" type="text" value="" name="company" data-required="1" />
+                        </span>
+                      </label>
+                    </div>
+                    <div class="form__group">
+                      <label class="field-text js-field">
+                        <span class="field-text__input-wrap">
+                          <span class="field-text__name">Телефон *</span>
+                          <input class="field-text__input" type="tel" value="" name="phone" data-required="1" />
+                        </span>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="block-form__row">
+                    <button class="btn btn--main block-form__btn">Отправить</button>
+                  </div>
+                  <p class="form__warning block-form__mt">Нажимая кнопку «Отправить» я даю свое <a href="#">согласие на обработку персональных данных</a>
+                  </p>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="libs/Inputmask-5.x/dist/inputmask.min.js"></script>
+    <script src="libs/@fancyapps/ui/dist/fancybox.umd.js"></script>
+    <script src="libs/flickity/flickity.pkgd.min.js"></script>
+    <script src="libs/swiper/swiper-bundle.min.js"></script>
+    <script src="js/custom.js"></script>
+  </body>
+</html>

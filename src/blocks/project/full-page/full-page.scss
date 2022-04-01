@@ -1,0 +1,81 @@
+.full-page {
+  margin-left: -20px;
+  margin-right: -20px;
+  margin-bottom: 20px;
+  min-height: calc(100vh - 50px);
+  background-image: url("../img/decor/full-page-decor.jpg");
+  background-color: #f2f2f2;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+
+  .card-content {
+    padding: 70px 56px;
+    max-width: 641px;
+  }
+
+  @media (min-width: $screen-xl) {
+    min-height: calc(100vh - 101px);
+  }
+}
+
+.full-page .card-content {
+  padding: 52px 20px;
+  max-width: 300px;
+
+  @media (min-width: $screen-xl) {
+    padding: 70px 56px;
+    max-width: 641px;
+  }
+}
+
+.full-page__main-picture {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+
+  @media (min-width: $screen-xl) {
+    object-fit: contain;
+  }
+}
+
+.full-page__desc {
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 23px;
+  max-width: 440px;
+  margin-bottom: 42px;
+
+  @media (min-width: $screen-xl) {
+    font-size: 21px;
+    line-height: 29px;
+    margin-bottom: 24px;
+  }
+}
+
+.full-page__title {
+  margin-bottom: 16px;
+
+  @media (min-width: $screen-xl) {
+    margin-bottom: 24px;
+  }
+}
+
+.full-page__descriptor {
+  display: block;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  opacity: 0.8;
+  margin-bottom: 16px;
+
+  @media (min-width: $screen-xl) {
+    font-size: 19px;
+    line-height: 26px;
+    margin-bottom: 24px;
+  }
+}

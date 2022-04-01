@@ -1,0 +1,34 @@
+.block-social {
+  .block-type__overflow {
+    padding-left: 0;
+    padding-right: 0;
+
+    @media (min-width: $screen-xl) {
+      padding: 45px 0 92px;
+    }
+  }
+}
+
+.block-social__picture {
+  position: relative;
+  max-width: 534px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url("../img/decor/block-social-phone-bg.png");
+  background-repeat: repeat;
+  background-size: cover;
+  background-position: left -20px bottom 0;
+
+  &::after {
+    content: '';
+    position: absolute;
+    height: 332px;
+    width: 369px;
+    right: -141px;
+    bottom: -80px;
+    background-image: url("../img/decor/block-social-phone-feather.png");
+    background-repeat: repeat;
+    background-position: center;
+  }
+}

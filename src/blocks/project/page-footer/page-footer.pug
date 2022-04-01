@@ -1,0 +1,46 @@
+mixin page-footer()
+  +block-type({
+    container: true,
+    mainTag: 'footer'
+  })(id="contact").page-footer
+    .page-footer__row.page-footer__mb-small.page-footer__row--top
+      .page-footer__column
+        h2.block-type__title.block-type__title--white.title-h1 Контакты
+      .page-footer__column
+        +logo('index.html')
+          img(src='img/content/logo-white.svg', alt='Logo')
+    .page-footer__row.page-footer__mb-middle
+      .page-footer__column
+        .page-footer__info
+          .info
+            strong.info__title Приезжайте в Ижевске
+            ul.info__list
+              li.info__item
+                span ул. Пушкинская, 283, (ост. Администрация)
+              li.info__item
+                span ул. Ворошилова, 27
+              li.info__item
+                span ул. Школьная, 8
+          .info
+            strong.info__title Звоните
+            ul.info__list
+              - for (let i = 0; i < 3; i++)
+                li.info__item
+                  a(href="tel:+7(3412)677-297") +7 (3412) 677-297
+          .info
+            strong.info__title Следите
+            .info__list-btns
+              each item, i in social
+                a.btn.btn--b-tr(href="#", target="_blank")= item.name
+                  img.btn__icon.btn__icon--m-left(src=item.icon, alt=item.name)
+      .page-footer__column
+        ul.list-doc.page-footer__docs
+          each item, i in doc
+            li.list-doc__item
+              a.link-doc.list-doc__link(href="#", target="_blank")= item
+    .page-footer__row.page-footer__row--center
+      .page-footer__column
+        p.link-doc.link-doc--n-line МЕДИЦИНСКАЯ ЛИЦЕНЗИЯ ЛО-18-01-002558 от 22 октября 2018 г.
+      .page-footer__column
+        a.develop(href="https://pplans.ru/", target="_blank")
+          img(src="img/content/develop.svg", alt="Веб студия «People Plans» — Разработка и продвижение лучших сайтов. Создание логотипов и фирменного стиля. Настройка контекстной рекламы и SEO продвижение.")

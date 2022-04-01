@@ -1,0 +1,43 @@
+.info {
+  color: $white;
+}
+
+.info__title {
+  display: block;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  color: $white;
+  margin-bottom: 20px;
+
+  @media (min-width: $screen-xl) {
+    margin-bottom: 32px;
+  }
+}
+
+.info__list-btns {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 8px;
+
+  @media (min-width: $screen-xl) {
+    flex-direction: row;
+  }
+}
+
+.info__list {
+  @include ul-none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+
+  @media (min-width: $screen-xl) {
+    gap: 16px;
+  }
+}
+
+.info__item a {
+  text-decoration: none;
+  color: inherit;
+}
