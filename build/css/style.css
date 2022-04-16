@@ -1567,6 +1567,15 @@ textarea.field-text__input {
     text-decoration: initial;
     text-transform: capitalize;
 }
+.list-cities__sublist span {
+    display: block;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.05em;
+    color: #aa8475;
+    margin-bottom: 8px;
+}
 :focus {
     outline: none !important;
 }
