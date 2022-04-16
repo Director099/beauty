@@ -72,9 +72,9 @@ function ValidateForm(elem) {
           showMaskOnHover: false
         }).mask(document.querySelectorAll("[type='tel']"));
 
-        // if (!tel.isComplete()) {
-        //   _this.addInvalid(elem);
-        // }
+        if (!tel.isComplete()) {
+          _this.addInvalid(elem);
+        }
       }
 
       if ($(this).data('type') == "password") {
