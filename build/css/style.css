@@ -1180,15 +1180,22 @@ textarea.field-text__input {
 .modal-location .carousel__button {
     display: none;
 }
+.modal-location .container-xxl {
+    flex-grow: 1;
+}
 .modal-location .modal__dialog {
     width: 100%;
     min-height: 100%;
+}
+.modal-location .modal__content {
+    flex-direction: inherit;
 }
 .modal-location__column {
     display: flex;
     flex-direction: column;
     gap: 32px;
     padding: 0px 0px 20px;
+    min-height: 100%;
 }
 .modal-location .link-doc {
     color: #7e7674;
