@@ -38,6 +38,7 @@
 @import "../blocks/components/logo/logo";
 @import "../blocks/components/display/display";
 @import "../blocks/components/burger/burger";
+@import "../blocks/components/form/form";
 @import "../blocks/components/block-form/block-form";
 
 @import "../blocks/modal/modal-location/modal-location";
@@ -59,6 +60,11 @@
 
 :focus {
   outline: none !important;
+}
+
+.fancybox__backdrop {
+  background: radial-gradient(61.32% 175.67% at 52.57% 96.69%, rgba(138, 125, 120, 0.7) 63.66%, rgba(99, 93, 93, 0.7) 100%);
+  backdrop-filter: blur(30px);
 }
 
 

@@ -142,9 +142,8 @@ $z-index-modal:               100 !default;
   }
 
   .carousel__button.is-close {
-    top: 0;
+    top: -7px;
     left: 105%;
-    border: 1px solid;
   }
 }
 

@@ -6,6 +6,20 @@
 
 .block-form__title {
   margin-bottom: 16px;
+
+  @media (min-width: $screen-xl) {
+    text-align: center;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #F2F2F2;
+    margin-bottom: 52px;
+  }
+}
+
+.block-form__wrap {
+  @media (min-width: $screen-xl) {
+    padding-left: 37px;
+    padding-right: 37px;
+  }
 }
 
 .block-form__content {
@@ -19,10 +33,6 @@
 
 .block-form__group {
   margin-bottom: 25px;
-
-  @media (min-width: $screen-xl) {
-    margin-bottom: 40px;
-  }
 }
 
 .block-form__row {
@@ -36,17 +46,11 @@
 }
 
 .block-form__btn {
-  font-weight: 600;
   width: 100%;
-
-  @media (min-width: $screen-xl) {
-    min-width: 144px;
-    width: auto;
-  }
 }
 
 .block-form__mt {
-  margin-top: 30px;
+  margin-top: 25px;
   margin-bottom: 0;
 }
 

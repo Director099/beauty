@@ -37,3 +37,20 @@ $line-height:                 1.5 !default;
     color: currentColor;
   }
 }
+
+.form__warning {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  color: #7E7674;
+
+  @media (min-width: $screen-xl) {
+    text-align: center;
+  }
+
+  a {
+    color: #0095E9;
+    text-decoration: none;
+  }
+}
