@@ -29,14 +29,33 @@
     <title>Сраница не найдена</title>
   </head>
   <body>
-    <main class="order-page">
-      <section class="order-page__block">
-        <img class="order-page__img" src="img/content/404-error.png" alt="Страница не найдена">
-        <h1 class="title order-page__title">Страница не найдена</h1>
-        <p class="order-page__text">Вероятнее всего, вы перешли на несуществующую страницу</p>
-        <a class="btn btn--main order-page__btn" href="/">Вернуться</a>
-      </section>
-    </main>
+    <div class="order-page">
+      <header class="page-header">
+        <div class="container-xxl">
+          <div class="page-header__row">
+            <a class="logo page-header__logo" href="index.html">
+              <img src="img/content/logo.svg" alt="Logo" />
+            </a>
+          </div>
+        </div>
+      </header>
+      <main class="order-page__content">
+        <section class="order-page__block">
+          <img class="order-page__img" src="img/content/404-error.svg" alt="Страница не найдена">
+          <h1 class="text-h1 order-page__title order-page__title--mt-negative">Ошибка, страница не найдена</h1>
+          <p class="order-page__text">Вероятнее всего, вы перешли на несуществующую страницу</p>
+          <a class="btn btn--secondary btn--s-big order-page__btn" href="/">На главную</a>
+        </section>
+      </main>
+      <footer class="order-page__footer">
+        <div class="copyright">
+          <p class="link-doc link-doc--n-line copyright__link-dock">МЕДИЦИНСКАЯ ЛИЦЕНЗИЯ ЛО-18-01-002558 от 22 октября 2018 г.</p>
+          <a class="develop" href="https://pplans.ru/" target="_blank">
+            <img src="img/content/develop-dark.svg" alt="Веб студия «People Plans» — Разработка и продвижение лучших сайтов. Создание логотипов и фирменного стиля. Настройка контекстной рекламы и SEO продвижение." />
+          </a>
+        </div>
+      </footer>
+    </div>
     <div class="modal modal-location" id="modal-location" tabindex="-1" role="dialog">
       <div class="modal__dialog" role="document">
         <div class="modal__content">

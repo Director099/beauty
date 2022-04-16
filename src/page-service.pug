@@ -3,7 +3,9 @@ extends pug/layout.pug
 block meta
   title Главная
 block header
-  +page-header("img/content/logo.svg")
+  +page-header({
+    logo: "img/content/logo.svg"
+  })
 block content
   .main-content
     main

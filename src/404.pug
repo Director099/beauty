@@ -5,10 +5,18 @@ block meta
 block header
 
 block content
-  main.order-page
-    section.order-page__block
-      img.order-page__img(src='img/content/404-error.png', alt='Страница не найдена')
-      h1.title.order-page__title Страница не найдена
-      p.order-page__text Вероятнее всего, вы перешли на несуществующую страницу
-      a.btn.btn--main.order-page__btn(href='/') Вернуться
+  .order-page
+    +page-header({
+      logo: "img/content/logo.svg",
+      nav: true,
+      contentRight: true
+    }).order-page__header
+    main.order-page__content
+      section.order-page__block
+        img.order-page__img(src='img/content/404-error.svg', alt='Страница не найдена')
+        h1.text-h1.order-page__title.order-page__title--mt-negative Ошибка, страница не найдена
+        p.order-page__text Вероятнее всего, вы перешли на несуществующую страницу
+        a.btn.btn--secondary.btn--s-big.order-page__btn(href='/') На главную
+    footer.order-page__footer
+      +copyright("img/content/develop-dark.svg")
 block footer

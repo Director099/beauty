@@ -322,6 +322,11 @@ a.btn--disabled {
     background-color: black;
     border-color: black;
 }
+.btn--secondary {
+    color: white;
+    background: #aa8475;
+    border-color: #aa8475;
+}
 .btn__icon {
     vertical-align: bottom;
 }
@@ -1385,14 +1390,34 @@ textarea.field-text__input {
 }
 .order-page {
     display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 8px 12px 14px;
+    min-height: 100vh;
+}
+.order-page .page-header__row {
+    padding: 0;
+}
+.order-page .logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.order-page__content {
+    display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
-    min-height: 100vh;
-    padding: 15px;
+    padding: 15px 0;
+    flex: 1 0 auto;
 }
 .order-page__title {
     margin-bottom: 15px;
+    font-weight: 400;
+}
+.order-page__title--negative {
+    margin-top: -50px;
 }
 .order-page__social {
     list-style-type: none;
@@ -1418,14 +1443,18 @@ textarea.field-text__input {
     padding: 10px 30px 8px;
 }
 .order-page__text {
-    max-width: 480px;
-    margin: 0 auto 20px;
+    max-width: 191px;
+    margin: 40px auto 20px;
+    color: #7e7674;
+}
+.order-page__text--w-auto {
+    max-width: inherit;
 }
 .order-page__block {
     text-align: center;
 }
-.order-page__img {
-    transform: translateX(15px);
+.order-page__footer .link-doc {
+    color: #222222;
 }
 .block-review .block-type__overflow {
     background-image: url("../img/decor/review-decor.jpg");

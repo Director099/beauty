@@ -6,7 +6,10 @@ block header
 
 block content
   .page-main
-    +page-header("img/content/logo-white.svg", true).page-main__header
+    +page-header({
+      logo: "img/content/logo-white.svg",
+      nav: true,
+    }).page-main__header
     main.page-main__content.page-main__content--center
       section.page-main__wrap
         h1.title-display-big.page-main__title Международная сеть салонов профессионального массажа

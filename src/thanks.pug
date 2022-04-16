@@ -5,23 +5,17 @@ block meta
 block header
 
 block content
-  main.order-page
-    section.order-page__block
-      img.order-page__img(src='img/content/page-thanks.png', alt='Страница благодарности')
-      h1.title.order-page__title Спасибо за заявку!
-      p.order-page__text В ближайшее время администратор свяжется с вами, а пока можете познакомиться и подписаться на наши соцсети:
-      ul.order-page__social
-        li.order-page__social-item
-          a.order-page__social-link(href='#', target='_blank', aria-label='Социальная сеть Facebook')
-            svg.order-page__social-icon(width='100%', height='100%')
-              use(href='img/symbols.svg#facebook-th')
-        li.order-page__social-item
-          a.order-page__social-link(href='#', target='_blank', aria-label='Социальная сеть Instagram')
-            svg.order-page__social-icon(width='100%', height='100%')
-              use(href='img/symbols.svg#instagram-th')
-        li.order-page__social-item
-          a.order-page__social-link(href='#', target='_blank', aria-label='Социальная сеть Vkontakte')
-            svg.order-page__social-icon(width='100%', height='100%')
-              use(href='img/symbols.svg#vk-th')
-      a.btn.btn--main.order-page__btn(href='/') На главную
+  .order-page
+    +page-header({
+        logo: "img/content/logo.svg",
+        nav: true,
+        contentRight: true
+    }).order-page__header
+    main.order-page__content
+      section.order-page__block
+        h1.text-h1.order-page__title #[span.title-display-big Спасибо,]#[br] что оставили заявку
+        p.order-page__text.order-page__text--w-auto Мы свяжемся с вами в ближайшее время
+        a.btn.btn--secondary.btn--s-big.order-page__btn(href='/') Назад
+    footer.order-page__footer
+      +copyright("img/content/develop-dark.svg")
 block footer

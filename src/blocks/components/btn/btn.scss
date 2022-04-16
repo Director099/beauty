@@ -44,9 +44,6 @@ $border-radius:               100px !default;
     border-color: #F2EAE7;
   }
 
-  //&:visited {
-  //  color: $text-color;
-  //}
 
   &:active,
   &:focus {
@@ -88,25 +85,11 @@ $border-radius:               100px !default;
     border-color: $black;
   }
 
-  // &--main {
-  //   color: #fff;
-  //   background-color: $color-main;
-  //   border: 1px solid $color-main;
-
-  //   &:hover,
-  //   &:focus {
-  //     color: #fff;
-  //     background-color: darken($color-main, 10%);
-  //     border-color: darken($color-main, 12%);
-  //   }
-
-  //   &--disabled,
-  //   &:disabled {
-  //     color: #fff;
-  //     background-color: $color-main;
-  //     border-color: $color-main;
-  //   }
-  // }
+  &--secondary {
+    color: $white;
+    background: #AA8475;
+    border-color: #AA8475;
+  }
 }
 
 .btn__icon {
