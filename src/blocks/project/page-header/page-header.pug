@@ -1,16 +1,18 @@
 mixin page-header(logo, nav)
   header.page-header
-    if (!nav)
-      +burger('Открыть меню')(data-src="#modal-menu" data-fancybox="").d-xl-none
-      +navigation(navMenu).d-none.d-xl-block
-    +logo('index.html').page-header__logo
-      img(src=logo, alt="Logo")
-    .page-header__right
-      a(href="tel:88001016897" class=`link-menu ${!nav ? 'link-menu--m-icon' : ''}`)
-        svg(width="10" height="10").link-menu__icon.link-menu__icon--m-right
-          use(href="img/symbols.svg#icon-phone")
-        | 8 800 101 68 97
-      a(href="#modal-location" class=`link-menu arrow ${!nav ? 'd-none d-xl-flex' : ''}` data-fancybox="")
-        svg(width="10" height="10").link-menu__icon.link-menu__icon--m-right
-          use(href="img/symbols.svg#icon-location")
-        | Ижевск
+    .container-xxl
+      .page-header__row
+        if (!nav)
+          +burger('Открыть меню')(data-src="#modal-menu" data-fancybox="").d-xl-none
+          +navigation(navMenu).d-none.d-xl-block
+        +logo('index.html').page-header__logo
+          img(src=logo, alt="Logo")
+        .page-header__right
+          a(href="tel:88001016897" class=`link-menu ${!nav ? 'link-menu--m-icon' : ''}`)
+            svg(width="10" height="10").link-menu__icon.link-menu__icon--m-right
+              use(href="img/symbols.svg#icon-phone")
+            | 8 800 101 68 97
+          a(href="#modal-location" class=`link-menu arrow ${!nav ? 'd-none d-xl-flex' : ''}` data-fancybox="")
+            svg(width="10" height="10").link-menu__icon.link-menu__icon--m-right
+              use(href="img/symbols.svg#icon-location")
+            | Ижевск

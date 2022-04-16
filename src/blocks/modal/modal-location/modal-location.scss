@@ -6,6 +6,10 @@
   left: 0;
   padding: 0;
   overflow: auto;
+  background-image: url("../img/decor/bg-change-city.jpg");
+  background-color: #F2F2F2;
+  background-repeat: no-repeat;
+  background-size: cover;
 
   .carousel__button {
     display: none;
@@ -17,15 +21,11 @@
   min-height: 100%;
 }
 
-.modal-location .modal__content {
+.modal-location__column {
   display: flex;
   flex-direction: column;
   gap: 32px;
-  padding: 0px 20px 20px;
-  background-image: url("../img/decor/bg-change-city.jpg");
-  background-color: #F2F2F2;
-  background-repeat: no-repeat;
-  background-size: cover;
+  padding: 0px 0px 20px;
 
   @media (min-width: $screen-xl) {
     gap: 56px;

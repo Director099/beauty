@@ -666,10 +666,6 @@ textarea.field-text__input {
     padding-left: 10px;
     padding-right: 10px;
 }
-.main-content {
-    min-height: 100vh;
-    padding: 0 20px 0px;
-}
 .main-content__mb-grid {
     margin-bottom: 56px;
 }
@@ -680,6 +676,13 @@ textarea.field-text__input {
     margin-right: auto;
     padding-left: 20px;
     padding-right: 20px;
+}
+.container-xxl {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 0 auto;
+    max-width: 1440px;
+    width: 100%;
 }
 .card {
     position: relative;
@@ -1169,6 +1172,10 @@ textarea.field-text__input {
     left: 0;
     padding: 0;
     overflow: auto;
+    background-image: url("../img/decor/bg-change-city.jpg");
+    background-color: #f2f2f2;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .modal-location .carousel__button {
     display: none;
@@ -1177,15 +1184,11 @@ textarea.field-text__input {
     width: 100%;
     min-height: 100%;
 }
-.modal-location .modal__content {
+.modal-location__column {
     display: flex;
     flex-direction: column;
     gap: 32px;
-    padding: 0px 20px 20px;
-    background-image: url("../img/decor/bg-change-city.jpg");
-    background-color: #f2f2f2;
-    background-repeat: no-repeat;
-    background-size: cover;
+    padding: 0px 0px 20px;
 }
 .modal-location .link-doc {
     color: #7e7674;
@@ -1266,6 +1269,8 @@ textarea.field-text__input {
 }
 .page-header {
     position: relative;
+}
+.page-header__row {
     display: -ms-grid;
     display:     grid;
     -ms-grid-columns: 1fr max-content 1fr;
@@ -1273,7 +1278,7 @@ textarea.field-text__input {
     justify-content: space-between;
     align-items: center;
     min-height: 48px;
-    padding: 4px 20px;
+    padding: 4px 0;
     z-index: 2;
 }
 .page-header__right {
@@ -1321,7 +1326,7 @@ textarea.field-text__input {
     background-repeat: no-repeat;
     background-size: cover;
 }
-.page-main .page-header {
+.page-main .page-header__row {
     padding: 0;
     display: flex;
 }
@@ -1486,8 +1491,6 @@ textarea.field-text__input {
     margin-bottom: 0;
 }
 .full-page {
-    margin-left: -20px;
-    margin-right: -20px;
     margin-bottom: 20px;
     min-height: calc(100vh - 50px);
     background-image: url("../img/decor/full-page-decor.jpg");
@@ -1498,11 +1501,7 @@ textarea.field-text__input {
     border-top-left-radius: 0;
 }
 .full-page .card-content {
-    padding: 70px 56px;
-    max-width: 641px;
-}
-.full-page .card-content {
-    padding: 52px 20px;
+    padding: 52px 0px;
     max-width: 300px;
 }
 .full-page__main-picture {
@@ -1510,8 +1509,11 @@ textarea.field-text__input {
     bottom: 0;
     right: 0;
     height: 100%;
-    object-fit: cover;
     z-index: -1;
+}
+.full-page__main-picture img {
+    height: 100%;
+    object-fit: cover;
 }
 .full-page__desc {
     font-weight: 400;
@@ -1861,7 +1863,7 @@ textarea.field-text__input {
         min-width: 144px;
         width: auto;
     }
-    .modal-location .modal__content {
+    .modal-location__column {
         gap: 56px;
         padding-top: 8px;
     }
@@ -1879,7 +1881,7 @@ textarea.field-text__input {
     .modal-callback .modal__dialog {
         width: 300px;
     }
-    .page-header {
+    .page-header__row {
         min-height: 101px;
     }
     .page-footer__row {
@@ -1901,7 +1903,7 @@ textarea.field-text__input {
     .page-footer__docs {
         max-width: 198px;
     }
-    .page-main .page-header {
+    .page-main .page-header__row {
         justify-content: flex-end;
     }
     .page-main .page-header__right {
@@ -1932,12 +1934,13 @@ textarea.field-text__input {
     }
     .full-page {
         min-height: calc(100vh - 101px);
+        height: auto;
     }
     .full-page .card-content {
-        padding: 70px 56px;
+        padding: 70px 36px;
         max-width: 641px;
     }
-    .full-page__main-picture {
+    .full-page__main-picture img {
         object-fit: contain;
     }
     .full-page__desc {

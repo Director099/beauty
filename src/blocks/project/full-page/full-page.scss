@@ -1,6 +1,4 @@
 .full-page {
-  margin-left: -20px;
-  margin-right: -20px;
   margin-bottom: 20px;
   min-height: calc(100vh - 50px);
   background-image: url("../img/decor/full-page-decor.jpg");
@@ -10,22 +8,18 @@
   border-top-right-radius: 0;
   border-top-left-radius: 0;
 
-  .card-content {
-    padding: 70px 56px;
-    max-width: 641px;
-  }
-
   @media (min-width: $screen-xl) {
     min-height: calc(100vh - 101px);
+    height: auto;
   }
 }
 
 .full-page .card-content {
-  padding: 52px 20px;
+  padding: 52px 0px;
   max-width: 300px;
 
   @media (min-width: $screen-xl) {
-    padding: 70px 56px;
+    padding: 70px 36px;
     max-width: 641px;
   }
 }
@@ -35,11 +29,15 @@
   bottom: 0;
   right: 0;
   height: 100%;
-  object-fit: cover;
   z-index: -1;
 
-  @media (min-width: $screen-xl) {
-    object-fit: contain;
+  img {
+    height: 100%;
+    object-fit: cover;
+
+    @media (min-width: $screen-xl) {
+      object-fit: contain;
+    }
   }
 }
 
