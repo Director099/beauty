@@ -6,7 +6,7 @@
   flex-direction: column; //надо подумать на сколько правильно так?
   background: #E9E5E3;
   border-radius: 20px;
-  min-height: 180px; // ХЗ как лучшеданную цифру не использую
+  height: 180px; // ХЗ как лучшеданную цифру не использую
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -14,7 +14,7 @@
   z-index: 1;
 
   &--content-end {
-    justify-content: end;
+    justify-content: flex-end;
   }
 
   &--content-center {
@@ -33,6 +33,10 @@
   .card-content {
     background: rgba(170, 132, 117, 0.5);
     backdrop-filter: blur(15px);
+
+    @supports not (backdrop-filter:blur(15px)) {
+      background: rgba(170, 132, 117, 0.8);
+    }
   }
 }
 
@@ -48,7 +52,11 @@
 
   .card-content {
     background: rgba(189, 189, 189, 0.31);
-    backdrop-filter: blur(15px)
+    backdrop-filter: blur(15px);
+
+    @supports not (backdrop-filter:blur(15px)) {
+      background: rgba(189, 189, 189, 0.8);
+    }
   }
 }
 
