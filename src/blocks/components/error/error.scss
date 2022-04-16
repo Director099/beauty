@@ -1,0 +1,12 @@
+.error {
+  &.field-text {
+    .field-text__input {
+      border-color: $color-danger;
+    }
+
+    .field-text__help-text {
+      color: $color-danger;
+      display: block;
+    }
+  }
+}
