@@ -1558,6 +1558,9 @@ textarea.field-text__input {
     text-decoration: initial;
     text-transform: capitalize;
 }
+:focus {
+    outline: none !important;
+}
 [data-src] {
     cursor: pointer;
 }

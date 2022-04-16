@@ -56,6 +56,11 @@
 @import "../blocks/project/full-page/full-page";
 @import "../blocks/project/list-cities/list-cities";
 
+:focus {
+  outline: none !important;
+}
+
+
 .with-fancybox {
   @media (max-width: $screen-xl - 1) {
     overflow: hidden;

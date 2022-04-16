@@ -1,5 +1,7 @@
 mixin full-page({title})
-  +card({})(id="about").full-page
+  +card({
+    contentCenter: true
+  })(id="about").full-page
     +card-content({})
       span.full-page__descriptor «Мечта Бьюти» – с нами быть красивыми легко!
       h1.full-page__title.title-h1 Международная сеть салонов профессионального массажа
