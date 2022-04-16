@@ -1,5 +1,6 @@
 'use strict';
 import '../blocks/components/tabs/tabs.js';
+import '../blocks/components/form/form.js';
 
 /**
  Фенсибркс, отключение свойства граб

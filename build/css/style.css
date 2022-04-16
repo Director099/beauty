@@ -333,6 +333,13 @@ a.btn--disabled {
 .btn__icon--m-left {
     margin-left: 10px;
 }
+.error.field-text .field-text__input {
+    border-color: #d8544f;
+}
+.error.field-text .field-text__help-text {
+    color: #d8544f;
+    display: block;
+}
 .js-modal-open {
     overflow: hidden;
 }
