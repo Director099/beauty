@@ -812,13 +812,9 @@ textarea.field-text__input {
     margin-bottom: 20px;
 }
 .block-type .slider-arrow--next {
-    top: 50%;
-    transform: translateY(-50%);
     right: -20px;
 }
 .block-type .slider-arrow--prev {
-    top: 50%;
-    transform: translateY(-50%);
     left: -20px;
 }
 .block-type__overflow {
@@ -1435,13 +1431,50 @@ textarea.field-text__input {
     background-image: url("../img/decor/review-decor.jpg");
     background-color: #f2f2f2;
 }
+.block-review .slider-arrow--next {
+    top: inherit;
+    transform: inherit;
+    bottom: 258.5px;
+}
+.block-review .slider-arrow--prev {
+    top: inherit;
+    transform: inherit;
+    bottom: 245.5px;
+}
 .block-personal .tab-filter {
     margin-left: -20px;
     margin-right: -20px;
     padding-left: 20px;
     padding-right: 20px;
 }
+.block-personal .slider-arrow--next {
+    top: inherit;
+    transform: inherit;
+    bottom: 245.5px;
+}
+.block-personal .slider-arrow--prev {
+    top: inherit;
+    transform: inherit;
+    bottom: 245.5px;
+}
 .block-personal__warning {
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 24px;
+    color: #916f5f;
+    margin-bottom: 32px;
+}
+.block-services .slider-arrow--next {
+    top: inherit;
+    transform: inherit;
+    bottom: 290.5px;
+}
+.block-services .slider-arrow--prev {
+    top: inherit;
+    transform: inherit;
+    bottom: 290.5px;
+}
+.block-services__warning {
     font-weight: 400;
     font-size: 17px;
     line-height: 24px;
@@ -1652,7 +1685,7 @@ textarea.field-text__input {
     .slider-arrow {
         display: block;
         position: absolute;
-        top: 0;
+        top: 50%;
         padding: 0;
         width: 44px;
         height: 44px;
@@ -1663,6 +1696,7 @@ textarea.field-text__input {
         background-position: center;
         background-repeat: no-repeat;
         box-shadow: 0px 9px 11px -6px rgba(165, 165, 165, 0.25);
+        transform: translateY(-50%);
         z-index: 4;
         transition: 0.3s;
     }

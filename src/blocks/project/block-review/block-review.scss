@@ -3,4 +3,16 @@
     background-image: url("../img/decor/review-decor.jpg");
     background-color: #f2f2f2;
   }
+
+  .slider-arrow--next {
+    top: inherit;
+    transform: inherit;
+    bottom: 258.5px;
+  }
+
+  .slider-arrow--prev {
+    top: inherit;
+    transform: inherit;
+    bottom: 245.5px;
+  }
 }

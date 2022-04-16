@@ -27,7 +27,7 @@ mixin block-multilevel({title})
             <button class="slider-arrow slider-arrow--prev swiper-button-prev" type="button" aria-label="Следующий слайд"></button>
             <button class="slider-arrow slider-arrow--next swiper-button-next" type="button" aria-label="Предыдущий слайд"></button>
           `
-        }).block-personal
+        }).block-services
           .js-slider-auto-width.block-type__slider
             .swiper-wrapper
               each item, i in services
@@ -50,8 +50,8 @@ mixin block-multilevel({title})
             <button class="slider-arrow slider-arrow--prev swiper-button-prev" type="button" aria-label="Следующий слайд"></button>
             <button class="slider-arrow slider-arrow--next swiper-button-next" type="button" aria-label="Предыдущий слайд"></button>
           `
-        }).block-personal
-          p.block-personal__warning *Предложение действует при вервом посещении
+        }).block-services
+          p.block-services__warning *Предложение действует при вервом посещении
           .js-slider-auto-width.block-type__slider
             .swiper-wrapper
               each item, i in services
@@ -74,7 +74,7 @@ mixin block-multilevel({title})
             <button class="slider-arrow slider-arrow--prev swiper-button-prev" type="button" aria-label="Следующий слайд"></button>
             <button class="slider-arrow slider-arrow--next swiper-button-next" type="button" aria-label="Предыдущий слайд"></button>
           `
-        }).block-personal
+        }).block-services
           .filter-group
             ul.tab-filter
               li.tab-filter__item
