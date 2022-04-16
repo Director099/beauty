@@ -1,0 +1,33 @@
+.office-card {
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.office-card__map {
+  width: 100%;
+  object-fit: cover;
+
+  @media (min-width: $screen-xl) {
+    height: 138px;
+  }
+}
+
+.office-card__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 10px 12px 12px;
+  background-color: #F2F2F2;
+}
+
+.office-card__address {
+  margin: 0;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.office-card__btn {
+  padding-top: 9px;
+  padding-bottom: 9px;
+}

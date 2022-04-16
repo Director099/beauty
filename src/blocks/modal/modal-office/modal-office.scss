@@ -1,0 +1,45 @@
+.modal-office {
+  @media (min-width: $screen-xl) {
+    padding-top: 31px;
+    padding-bottom: 16px;
+  }
+}
+
+.modal-office__title {
+  margin-bottom: 16px;
+
+  @media (min-width: $screen-xl) {
+    text-align: center;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #F2F2F2;
+    margin-bottom: 11px;
+  }
+}
+
+.modal-office__total-office {
+  text-align: center;
+  margin-bottom: 28px;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+
+  /* Colors/Grey */
+
+  color: #7E7674;
+}
+
+.modal-office__card:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.modal-office .carousel__button {
+  display: none;
+}
+
+.modal-office .close {
+  @media (min-width: $screen-xl) {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+}

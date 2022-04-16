@@ -1,10 +1,13 @@
 .modal-menu {
-  padding: 0;
   background-image: url("../img/decor/bg-mobile-menu.jpg");
   background-color: #f2f2f2;
   background-repeat: no-repeat;
   background-size: cover;
   color: $white;
+
+  @media (max-width: $screen-xl - 1) {
+    padding: 0;
+  }
 }
 
 .modal-menu {

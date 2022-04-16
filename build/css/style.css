@@ -347,6 +347,8 @@ a.btn--disabled {
     display: none;
     z-index: 100;
     -webkit-overflow-scrolling: touch;
+    border-radius: 20px;
+    padding: 52px 16px;
 }
 .js-modal-open .modal {
     overflow-x: hidden;
@@ -371,12 +373,12 @@ a.btn--disabled {
     flex-shrink: 0;
 }
 .modal__title {
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
-    font-size: rem(18px);
-    line-height: 1.4;
-    font-weight: 700;
-    color: currentColor;
+    position: absolute;
+    left: 0;
+    right: 0;
+    text-align: center;
+    margin-bottom: 16px;
+    z-index: -1;
 }
 .modal__close {
     width: 24px;
@@ -1203,6 +1205,31 @@ textarea.field-text__input {
     top: 50%;
     transform: translateY(-50%);
 }
+.office-card {
+    border-radius: 20px;
+    overflow: hidden;
+}
+.office-card__map {
+    width: 100%;
+    object-fit: cover;
+}
+.office-card__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 10px 12px 12px;
+    background-color: #f2f2f2;
+}
+.office-card__address {
+    margin: 0;
+    font-size: 14px;
+    line-height: 20px;
+}
+.office-card__btn {
+    padding-top: 9px;
+    padding-bottom: 9px;
+}
 .modal-location {
     position: fixed;
     top: 0;
@@ -1215,6 +1242,7 @@ textarea.field-text__input {
     background-color: #f2f2f2;
     background-repeat: no-repeat;
     background-size: cover;
+    border-radius: 0;
 }
 .modal-location .carousel__button {
     display: none;
@@ -1279,7 +1307,6 @@ textarea.field-text__input {
     margin-bottom: 29px;
 }
 .modal-menu {
-    padding: 0;
     background-image: url("../img/decor/bg-mobile-menu.jpg");
     background-color: #f2f2f2;
     background-repeat: no-repeat;
@@ -1309,6 +1336,24 @@ textarea.field-text__input {
 }
 .modal-callback {
     padding: 20px;
+}
+.modal-office__title {
+    margin-bottom: 16px;
+}
+.modal-office__total-office {
+    text-align: center;
+    margin-bottom: 28px;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.05em;
+    /* Colors/Grey */
+    color: #7e7674;
+}
+.modal-office__card:not(:last-child) {
+    margin-bottom: 16px;
+}
+.modal-office .carousel__button {
+    display: none;
 }
 .page-header {
     position: relative;
@@ -1732,11 +1777,17 @@ textarea.field-text__input {
         padding: 18px 30px;
     }
     .modal__dialog {
-        width: 600px;
+        width: 364px;
         height: auto;
     }
     .modal--open .modal__dialog {
         animation: modal-content-show 0.3s 1 both;
+    }
+    .modal__title {
+        position: static;
+        padding-bottom: 16px;
+        border-bottom: 1px solid #f2f2f2;
+        margin-bottom: 11px;
     }
     .tabs__link-wrap--active {
         border-bottom: 1px solid #222222;
@@ -1988,6 +2039,9 @@ textarea.field-text__input {
         padding-left: 37px;
         padding-right: 37px;
     }
+    .office-card__map {
+        height: 138px;
+    }
     .modal-location__column {
         gap: 56px;
         padding-top: 8px;
@@ -2005,6 +2059,21 @@ textarea.field-text__input {
     }
     .modal-callback .modal__dialog {
         width: 364px;
+    }
+    .modal-office {
+        padding-top: 31px;
+        padding-bottom: 16px;
+    }
+    .modal-office__title {
+        text-align: center;
+        padding-bottom: 16px;
+        border-bottom: 1px solid #f2f2f2;
+        margin-bottom: 11px;
+    }
+    .modal-office .close {
+        position: absolute;
+        left: 0;
+        top: 0;
     }
     .page-header__row {
         min-height: 101px;
@@ -2101,6 +2170,8 @@ textarea.field-text__input {
         -ms-grid-row-align: auto;
         align-self: auto;
         overflow: auto;
+        padding: 20px;
+        border-radius: 0;
     }
     .modal__header {
         display: flex;
@@ -2214,6 +2285,9 @@ textarea.field-text__input {
         position: static;
         margin-bottom: 25px;
         transform: translate(0);
+    }
+    .modal-menu {
+        padding: 0;
     }
     .modal-menu .modal__header {
         display: flex;

@@ -1,0 +1,10 @@
+mixin modal-office()
+  +modal({
+    id: 'modal-office-1',
+    title: 'Ростов-на-Дону',
+    header: true,
+  }).modal-office
+      //h2.text-h1.modal-office__title Ростов-на-Дону
+      p.modal-office__total-office Найдено филиалов: 3
+      - for (let i = 0; i < 3; i++)
+          +office-card().modal-office__card

@@ -27,6 +27,8 @@ $z-index-modal:               100 !default;
   display: none;
   z-index: $z-index-modal;
   -webkit-overflow-scrolling: touch;
+  border-radius: 20px;
+  padding: 52px 16px;
 
   @media (max-width: $screen-xl - 1) {
     position: fixed;
@@ -36,6 +38,8 @@ $z-index-modal:               100 !default;
     left: 0;
     align-self: auto;
     overflow: auto;
+    padding: 20px;
+    border-radius: 0;
   }
 
   .js-modal-open & {
@@ -50,7 +54,7 @@ $z-index-modal:               100 !default;
     height: 100%;
 
     @media (min-width: $screen-xl) {
-      width: 600px;
+      width: 364px;
       height: auto;
 
       #{$block-name}--open & {
@@ -84,12 +88,19 @@ $z-index-modal:               100 !default;
   }
 
   &__title {
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
-    font-size: $font-size--h4;
-    line-height: 1.4;
-    font-weight: 700;
-    color: currentColor;
+    position: absolute;
+    left: 0;
+    right: 0;
+    text-align: center;
+    margin-bottom: 16px;
+    z-index: -1;
+
+    @media (min-width: $screen-xl) {
+      position: static;
+      padding-bottom: 16px;
+      border-bottom: 1px solid #F2F2F2;
+      margin-bottom: 11px;
+    }
   }
 
   &__close {

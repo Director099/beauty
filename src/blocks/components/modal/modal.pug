@@ -30,6 +30,6 @@ mixin modal({id, title, header, tpl})
             .modal__header
               span.close.modal__close.modal__close--arrow(data-fancybox-close="", aria-label='Закрыть') #[span]
               if (title)
-                h4.modal__title!= title
+                h4.text-h1.modal__title!= title
               !=tpl
           block
