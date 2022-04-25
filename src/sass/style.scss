@@ -70,6 +70,7 @@
   backdrop-filter: blur(30px);
 }
 
+// кастыль для блока сервисы
 .filter-group {
   @media (min-width: $screen-xl) {
     .card--service {
