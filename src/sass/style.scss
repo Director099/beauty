@@ -70,6 +70,13 @@
   backdrop-filter: blur(30px);
 }
 
+.filter-group {
+  @media (min-width: $screen-xl) {
+    .card--service {
+      min-height: 419px;
+    }
+  }
+}
 
 .with-fancybox {
   @media (max-width: $screen-xl - 1) {
