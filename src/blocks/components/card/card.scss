@@ -28,6 +28,12 @@
 
   @media (min-width: $screen-xl) {
     min-height: 503px;
+    background-size: auto;
+    background-position: top center;
+
+    .card-content__list-short-text {
+      margin-top: 10px;
+    }
   }
 
   .card-content {

@@ -2,7 +2,7 @@ mixin popover(popoverTopBlock)
   .popover
     if (popoverTopBlock)
       .popover__top-block
-        a.btn.btn--b-tr Заказать звонок
+        a.btn.btn--b-tr(href="#modal-callback" data-fancybox="" data-callback-title="Оставить заявку" data-callback-Btn="Оставить заявк") Заказать звонок
     ul.popover__list
       li.popover__item
         .popover__header

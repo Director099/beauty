@@ -9,6 +9,19 @@ Fancybox.bind("[data-fancybox]", {
   dragToClose: false,
 });
 
+Fancybox.bind('[href="#modal-callback"]', {
+  on: {
+    ready: (fancybox) => {
+      console.log(fancybox)
+      const titleCallback = fancybox.options.target.dataset.callbackTitle;
+      const btnCallback = fancybox.options.target.dataset.callbackBtn;
+      const modalCallback = document.querySelector("#modal-callback");
+      modalCallback.querySelector('.block-form__title').textContent = titleCallback;
+      modalCallback.querySelector('.block-form__btn').textContent = btnCallback;
+    }
+  }
+});
+
 /**
   Слайдер с авто шириной
  */
