@@ -2306,6 +2306,11 @@ textarea.field-text__input {
         padding-left: 20px;
         padding-right: 20px;
     }
+    .modal-callback .modal__body {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
     .page-footer .block-type__overflow {
         text-align: center;
         margin: 0 -20px;

@@ -14,3 +14,11 @@
     }
   }
 }
+
+.modal-callback .modal__body {
+  @media (max-width: $screen-xl - 1) {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+}
