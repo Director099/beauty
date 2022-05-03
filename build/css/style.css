@@ -2134,6 +2134,7 @@ textarea.field-text__input {
     .full-page {
         min-height: calc(100vh - 101px);
         height: auto;
+        justify-content: center;
     }
     .full-page .card-content {
         padding: 70px 36px;

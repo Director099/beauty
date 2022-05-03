@@ -11,6 +11,7 @@
   @media (min-width: $screen-xl) {
     min-height: calc(100vh - 101px);
     height: auto;
+    justify-content: center;
   }
 }
 
